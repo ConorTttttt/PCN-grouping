@@ -7,13 +7,14 @@ The actual checked-in regulatory ruleset remains unapproved and must fail closed
 from __future__ import annotations
 
 import json
-from pathlib import Path
 from decimal import Decimal
+from pathlib import Path
 
 from pcn_grouping.components import ComponentRules, EvidenceCatalog, IdentityRecord, LineEvidence
 from pcn_grouping.concentration import find_common_declaration
 from pcn_grouping.eligibility import (
-    ApplicabilityEvidence, EligibilityContext, ReviewedClassification, evaluate_group,
+    ApplicabilityEvidence, EligibilityContext, EligibilityDecision, ReviewedClassification,
+    evaluate_group,
 )
 from pcn_grouping.models import (
     CLPClassification, Component, ComponentKind, ConcentrationValue, Evidence,
@@ -102,6 +103,8 @@ def _context(forms: tuple[Formulation, ...], *, approved: bool = True,
     for f in forms:
         for component in f.components:
             key = component.identity_id
+            if key is None:
+                raise ValueError("synthetic integration fixtures require known identities")
             identities[key] = IdentityRecord(
                 key, ComponentKind.SUBSTANCE, "CLP_ART18", key,
                 _verified("registry:" + key),
@@ -133,7 +136,7 @@ def _context(forms: tuple[Formulation, ...], *, approved: bool = True,
     )
 
 
-def _code_for(decision: object, rule_id: str) -> tuple[str, ...]:
+def _code_for(decision: EligibilityDecision, rule_id: str) -> tuple[str, ...]:
     return tuple(
         dict(item.values).get("code", "")
         for item in decision.rule_results
