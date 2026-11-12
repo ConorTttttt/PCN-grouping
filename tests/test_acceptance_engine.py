@@ -11,6 +11,7 @@ import copy
 import importlib.util
 import json
 import sys
+from decimal import Decimal
 from pathlib import Path
 from typing import Any
 
@@ -100,3 +101,40 @@ def test_pairwise_subsets_do_not_override_whole_group_failure(
         ]
         assert len(pair_case["formulations"]) == 2
         assert adapter.evaluate(pair_case)["status"] == "ELIGIBLE"
+
+
+@settings(max_examples=40, deadline=None)
+@given(st.integers(min_value=45000, max_value=50015))
+def test_generated_exact_per_mixture_perfume_cap(ten_thousandths: int) -> None:
+    """Exercise 5.0000 inclusive and every sampled 5.0001+ value without floats."""
+    adapter = _adapter()
+    case = copy.deepcopy(next(c for c in _cases() if c["id"] == "P04"))
+    value = Decimal(ten_thousandths) / Decimal("10000")
+    complement = Decimal("100") - value
+    component_base, component_perfume = case["formulations"][0]["components"]
+    component_base["actual_min_pct"] = component_base["actual_max_pct"] = str(complement)
+    component_perfume["actual_min_pct"] = component_perfume["actual_max_pct"] = str(value)
+    actual = adapter.evaluate(case)["status"]
+    expected = "ELIGIBLE" if value <= Decimal("5") else "INELIGIBLE"
+    assert actual == expected, (ten_thousandths, actual, expected)
+
+
+@settings(max_examples=20, deadline=None)
+@given(st.sampled_from(["NONPERFUME-A", "NONPERFUME-B", "NONPERFUME-C"]))
+def test_nonperfume_identity_change_never_becomes_eligible(identity: str) -> None:
+    adapter = _adapter()
+    case = copy.deepcopy(next(c for c in _cases() if c["id"] == "P02"))
+    alternate = case["formulations"][1]["components"][1]
+    alternate["canonical_identity_id"] = identity
+    alternate["declared_identity_id"] = identity
+    alternate["verified_perfume"] = False
+    alternate["perfume_role_evidence"] = None
+    assert adapter.evaluate(case)["status"] == "INELIGIBLE"
+
+
+@settings(max_examples=20, deadline=None)
+@given(st.sampled_from(["R04", "R06", "R11"]))
+def test_absent_evidence_is_never_a_pass(case_id: str) -> None:
+    adapter = _adapter()
+    case = next(c for c in _cases() if c["id"] == case_id)
+    assert adapter.evaluate(copy.deepcopy(case))["status"] == "REVIEW_REQUIRED"
