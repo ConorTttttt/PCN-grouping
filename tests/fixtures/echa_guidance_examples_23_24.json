@@ -1,0 +1,298 @@
+{
+  "schema": "pcn-echa-excerpts-v1",
+  "status": "SOURCE_CHECKED_GUIDANCE_NOT_STATUTORY_SIGNOFF",
+  "guidance": {
+    "title": "Guidance on harmonised information relating to emergency health response – Annex VIII to CLP",
+    "version": "6.0",
+    "date": "2025-10",
+    "section": "5.4.2",
+    "pdf": "https://www.certifico.com/component/attachments/download/45822",
+    "page_numbers_are_printed_pages": true,
+    "checked_date": "2026-11-12"
+  },
+  "examples": [
+    {
+      "id": "ECHA-23",
+      "pages": [
+        76,
+        77
+      ],
+      "source_quote_limit": "Data transcribed from ECHA tables and calculations; not a complete formulation dataset.",
+      "declared_common_components": [
+        {
+          "identity": "Chemical name component A",
+          "range_pct": [
+            "60",
+            "80"
+          ],
+          "component_class": "NOT_CLASSIFIED"
+        },
+        {
+          "identity": "Chemical name component B",
+          "range_pct": [
+            "7",
+            "10"
+          ],
+          "component_class": "OTHER"
+        },
+        {
+          "identity": "Chemical name component C",
+          "range_pct": [
+            "11",
+            "14"
+          ],
+          "component_class": "MAJOR"
+        },
+        {
+          "identity": "Chemical name component D",
+          "range_pct": [
+            "1",
+            "2"
+          ],
+          "component_class": "MAJOR"
+        }
+      ],
+      "products": [
+        {
+          "name": "Trade name 1",
+          "varying_perfumes": [
+            {
+              "identity": "Perfume chemical name 1",
+              "class": "OTHER",
+              "declared_range_pct": [
+                "1",
+                "2"
+              ],
+              "actual_pct": "1.2"
+            },
+            {
+              "identity": "Perfume chemical name 3",
+              "class": "MAJOR",
+              "declared_range_pct": [
+                "0.4",
+                "0.7"
+              ],
+              "actual_pct": "0.6"
+            },
+            {
+              "identity": "Perfume MiM",
+              "class": "OTHER",
+              "declared_range_pct": [
+                "0.5",
+                "1.5"
+              ],
+              "actual_pct": "1",
+              "ufi": "A67T-VHG2-DMM4-NH2A"
+            }
+          ],
+          "varying_perfume_sum_expected_pct": "2.8",
+          "shared_perfume_identity": "Perfume chemical name 5",
+          "shared_perfume_declared_range_pct": [
+            "1",
+            "4"
+          ]
+        },
+        {
+          "name": "Trade name 2",
+          "varying_perfumes": [
+            {
+              "identity": "Perfume chemical name 2",
+              "class": "MAJOR",
+              "declared_range_pct": [
+                "0.3",
+                "0.6"
+              ],
+              "actual_pct": "0.4"
+            },
+            {
+              "identity": "Perfume chemical name 4",
+              "class": "OTHER",
+              "declared_range_pct": [
+                "1",
+                "3"
+              ],
+              "actual_pct": "1.4"
+            },
+            {
+              "identity": "Perfumes (GCI)",
+              "class": "NOT_CLASSIFIED",
+              "declared_range_pct": null,
+              "actual_pct": "1.4"
+            }
+          ],
+          "varying_perfume_sum_expected_pct": "3.2",
+          "shared_perfume_identity": "Perfume chemical name 5",
+          "shared_perfume_declared_range_pct": [
+            "1",
+            "4"
+          ]
+        }
+      ],
+      "conclusion": "ECHA illustrates a permissible group with those differing perfume sums, subject to other information in example.",
+      "expected_group_if_full_composition_verified": "ELIGIBLE",
+      "evidence_completeness": "PARTIAL_EXCERPT",
+      "missing_from_excerpt": [
+        "Actual exact common-component concentrations in each mixture",
+        "Actual shared perfume concentration",
+        "Approved full final mixture CLP hazard signature (shown as #)",
+        "Full raw BOM and total composition"
+      ],
+      "full_evaluator_expected_without_synthetic_completion": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "ECHA-24",
+      "pages": [
+        78,
+        79
+      ],
+      "classification": [
+        "Eye Dam. 1",
+        "Skin Sens. 1"
+      ],
+      "products": [
+        "ABC",
+        "BCD",
+        "CDE"
+      ],
+      "single_group_ufi": "C4P7-GHVS-ED8M-42DH",
+      "declared_common_components": [
+        {
+          "identity": "Surfactant 123",
+          "range_pct": [
+            "5",
+            "6"
+          ]
+        },
+        {
+          "identity": "Surfactant 456",
+          "range_pct": [
+            "8",
+            "9"
+          ]
+        },
+        {
+          "identity": "Soap xyz",
+          "range_pct": [
+            "2",
+            "5"
+          ]
+        },
+        {
+          "identity": "Sodium carbonate",
+          "range_pct": [
+            "7",
+            "10"
+          ]
+        },
+        {
+          "identity": "Processing aid xxx",
+          "range_pct": [
+            "1",
+            "2"
+          ]
+        },
+        {
+          "identity": "Water",
+          "range_pct": [
+            "66",
+            "76.4"
+          ]
+        }
+      ],
+      "declared_perfume_total_range_pct": [
+        "5",
+        "7"
+      ],
+      "variable_perfumes": [
+        {
+          "identity": "Perfume mixture a",
+          "present_in": [
+            "ABC"
+          ],
+          "classification": [
+            "Skin Sens. 1"
+          ],
+          "ufi": "A67T-VHG2-DMM4-NH2A",
+          "concentration_omission": "B.3.4.2"
+        },
+        {
+          "identity": "Perfume mixture b",
+          "present_in": [
+            "ABC",
+            "CDE"
+          ],
+          "classification": [
+            "Skin Sens. 1B",
+            "Asp. Tox. 1"
+          ],
+          "ufi": null,
+          "declared_mim_range_pct_by_product": {
+            "ABC": [
+              "0.5",
+              "1.5"
+            ],
+            "CDE": [
+              "0.5",
+              "0.9"
+            ]
+          },
+          "sds_subcomponent_ranges_pct": {
+            "Substance A": [
+              "10",
+              "15"
+            ],
+            "Substance B": [
+              "20",
+              "30"
+            ],
+            "Substance C": [
+              "15",
+              "25"
+            ]
+          }
+        },
+        {
+          "identity": "Perfume (GCI)",
+          "present_in": [
+            "BCD",
+            "CDE"
+          ],
+          "classification": [],
+          "declared_range_pct_by_product": {
+            "BCD": [
+              "0.6",
+              "1.6"
+            ],
+            "CDE": [
+              "0.1",
+              "1.1"
+            ]
+          },
+          "gci_evidence_assumed_in_guidance": true
+        }
+      ],
+      "varying_perfume_ids_by_product": {
+        "ABC": [
+          "Perfume mixture a",
+          "Perfume mixture b"
+        ],
+        "BCD": [
+          "Perfume (GCI)"
+        ],
+        "CDE": [
+          "Perfume mixture b",
+          "Perfume (GCI)"
+        ]
+      },
+      "cap_rule": "Sum of actual varying perfumes per each product <=5%, if underlying actuals verified.",
+      "expected_group_if_all_actuals_verify_cap": "ELIGIBLE",
+      "evidence_completeness": "PARTIAL_EXCERPT",
+      "missing_from_excerpt": [
+        "Actual individual perfume concentrations for all products",
+        "Actual common-component concentrations and total composition",
+        "Full MiM supplier/SDS details for perfume mixture b"
+      ],
+      "full_evaluator_expected_without_synthetic_completion": "REVIEW_REQUIRED"
+    }
+  ]
+}

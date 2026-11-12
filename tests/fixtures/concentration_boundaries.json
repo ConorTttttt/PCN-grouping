@@ -1,0 +1,151 @@
+{
+  "schema": "pcn-concentration-boundary-v1",
+  "source": "docs/regulatory-requirements.md Part C (RESEARCH_DRAFT)",
+  "zones": [
+    {
+      "class": "MAJOR",
+      "at": "0.0999",
+      "expected_width": "0.1"
+    },
+    {
+      "class": "MAJOR",
+      "at": "0.1",
+      "expected_width": "0.3"
+    },
+    {
+      "class": "MAJOR",
+      "at": "0.9999",
+      "expected_width": "0.3"
+    },
+    {
+      "class": "MAJOR",
+      "at": "1",
+      "expected_width": "1"
+    },
+    {
+      "class": "MAJOR",
+      "at": "9.9999",
+      "expected_width": "1"
+    },
+    {
+      "class": "MAJOR",
+      "at": "10",
+      "expected_width": "3"
+    },
+    {
+      "class": "MAJOR",
+      "at": "24.9999",
+      "expected_width": "3"
+    },
+    {
+      "class": "MAJOR",
+      "at": "25",
+      "expected_width": "5"
+    },
+    {
+      "class": "OTHER",
+      "at": "0.9999",
+      "expected_width": "1"
+    },
+    {
+      "class": "OTHER",
+      "at": "1",
+      "expected_width": "3"
+    },
+    {
+      "class": "OTHER",
+      "at": "9.9999",
+      "expected_width": "3"
+    },
+    {
+      "class": "OTHER",
+      "at": "10",
+      "expected_width": "10"
+    },
+    {
+      "class": "OTHER",
+      "at": "24.9999",
+      "expected_width": "10"
+    },
+    {
+      "class": "OTHER",
+      "at": "25",
+      "expected_width": "20"
+    }
+  ],
+  "intervals": [
+    {
+      "class": "MAJOR",
+      "lo": "9.7",
+      "hi": "10.5",
+      "expected": "PASS"
+    },
+    {
+      "class": "MAJOR",
+      "lo": "9",
+      "hi": "11",
+      "expected": "FAIL"
+    },
+    {
+      "class": "MAJOR",
+      "lo": "24",
+      "hi": "26",
+      "expected": "PASS"
+    },
+    {
+      "class": "MAJOR",
+      "lo": "23",
+      "hi": "29",
+      "expected": "FAIL"
+    },
+    {
+      "class": "OTHER",
+      "lo": "4",
+      "hi": "6",
+      "expected": "PASS"
+    },
+    {
+      "class": "OTHER",
+      "lo": "3",
+      "hi": "7",
+      "expected": "FAIL"
+    },
+    {
+      "class": "MAJOR",
+      "lo": "0.09",
+      "hi": "0.19",
+      "expected": "PASS"
+    },
+    {
+      "class": "MAJOR",
+      "lo": "0.09",
+      "hi": "0.1901",
+      "expected": "FAIL"
+    },
+    {
+      "class": "MAJOR",
+      "lo": "0.9",
+      "hi": "1.2",
+      "expected": "PASS"
+    },
+    {
+      "class": "MAJOR",
+      "lo": "0.9",
+      "hi": "1.2001",
+      "expected": "FAIL"
+    },
+    {
+      "class": "OTHER",
+      "lo": "0.9",
+      "hi": "1.9",
+      "expected": "PASS"
+    },
+    {
+      "class": "OTHER",
+      "lo": "0.9",
+      "hi": "1.9001",
+      "expected": "FAIL"
+    }
+  ],
+  "caveat": "Boundary semantics subject to Agent A sign-off against exact annex and ECHA example 19."
+}

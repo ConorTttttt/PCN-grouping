@@ -1,0 +1,4145 @@
+{
+  "schema": "pcn-qa-proposed-contract-v1",
+  "status": "RESEARCH_DRAFT_NOT_LEGAL_APPROVAL",
+  "synthetic_only": true,
+  "requirements": "docs/acceptance-tests.md",
+  "ruleset": "rulesets/annex_viii_2026_07_01.research-draft.json",
+  "notes": "Requirements-level expectations. Final engine adapter to be aligned with Agents B/E and statutory interpretation signed off by Agent A.",
+  "cases": [
+    {
+      "id": "P01",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Trade A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Trade B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P02",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "Common perfume P-Z must not count against varying threshold.",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "94",
+              "actual_max_pct": "94",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Z",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Z",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "4",
+              "actual_max_pct": "4",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "94",
+              "actual_max_pct": "94",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Z",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Z",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "4",
+              "actual_max_pct": "4",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P04",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "95.0000",
+              "actual_max_pct": "95.0000",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "5.0000",
+              "actual_max_pct": "5.0000",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "95.0000",
+              "actual_max_pct": "95.0000",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "5.0000",
+              "actual_max_pct": "5.0000",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "A4.3_VARYING_PERFUMES": "FAIL"
+      },
+      "kind": "edge",
+      "notes": "Strict 5.0000/5.0001 exact boundary.",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "94.9999",
+              "actual_max_pct": "94.9999",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "5.0001",
+              "actual_max_pct": "5.0001",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "95",
+              "actual_max_pct": "95",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "5",
+              "actual_max_pct": "5",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "A4.2_COMPONENT_IDENTITY": "FAIL"
+      },
+      "kind": "negative",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "NONPERFUME-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "NONPERFUME-Y",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "A4.1_CLASSIFICATION": "FAIL"
+      },
+      "kind": "negative",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1",
+            "Skin Sens. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "ECHA5.4_LEGAL_SUBMITTER": "FAIL"
+      },
+      "kind": "negative",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-B",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P05",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.1_CLASSIFICATION": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [
+            "Aquatic Chronic 2"
+          ],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P06",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.1_NO_EUPCS_GATE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "Chemical eligibility only, dossier metadata separate.",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-DET-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P07",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.2_DECLARED_RANGE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90.3",
+              "actual_max_pct": "90.3",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "9.7",
+              "actual_max_pct": "9.7",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "89.5",
+              "actual_max_pct": "89.5",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "10.5",
+              "actual_max_pct": "10.5",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "A4.2_DECLARED_RANGE": "FAIL"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "91",
+              "actual_max_pct": "91",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "9",
+              "actual_max_pct": "9",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "89",
+              "actual_max_pct": "89",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "11",
+              "actual_max_pct": "11",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P08",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.2_DECLARED_RANGE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "76",
+              "actual_max_pct": "76",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "24",
+              "actual_max_pct": "24",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "74",
+              "actual_max_pct": "74",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "26",
+              "actual_max_pct": "26",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N06",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "A4.2_DECLARED_RANGE": "FAIL"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "77",
+              "actual_max_pct": "77",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "23",
+              "actual_max_pct": "23",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "71",
+              "actual_max_pct": "71",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-MAJOR",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-MAJOR",
+              "actual_min_pct": "29",
+              "actual_max_pct": "29",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "MAJOR",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P09",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.2_DECLARED_RANGE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "96",
+              "actual_max_pct": "96",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-OTHER",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-OTHER",
+              "actual_min_pct": "4",
+              "actual_max_pct": "4",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "94",
+              "actual_max_pct": "94",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-OTHER",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-OTHER",
+              "actual_min_pct": "6",
+              "actual_max_pct": "6",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N07",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "A4.2_DECLARED_RANGE": "FAIL"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "97",
+              "actual_max_pct": "97",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-OTHER",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-OTHER",
+              "actual_min_pct": "3",
+              "actual_max_pct": "3",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "93",
+              "actual_max_pct": "93",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-OTHER",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-OTHER",
+              "actual_min_pct": "7",
+              "actual_max_pct": "7",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P10",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "B3.2.3_GCI": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "Conditional validated GCI representation.",
+      "regulatory_review": "Agent A must sign off the shared GCI representation as a common notified component.",
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90",
+              "actual_max_pct": "90",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "COLOR-X",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-COLOURING-AGENTS",
+              "actual_min_pct": "10",
+              "actual_max_pct": "10",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "gci_evidence": "SYNTHETIC_APPROVAL",
+              "technical_function": "COLOURANT"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "88",
+              "actual_max_pct": "88",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "COLOR-Y",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-COLOURING-AGENTS",
+              "actual_min_pct": "12",
+              "actual_max_pct": "12",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "gci_evidence": "SYNTHETIC_APPROVAL",
+              "technical_function": "COLOURANT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R01",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "B3.2.3_GCI": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90",
+              "actual_max_pct": "90",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "COLOR-X-UNK",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-COLOURING-AGENTS",
+              "actual_min_pct": "10",
+              "actual_max_pct": "10",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "gci_evidence": "UNKNOWN",
+              "technical_function": "COLOURANT"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90",
+              "actual_max_pct": "90",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "COLOR-Y-UNK",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-COLOURING-AGENTS",
+              "actual_min_pct": "10",
+              "actual_max_pct": "10",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "gci_evidence": "UNKNOWN",
+              "technical_function": "COLOURANT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "A4.3_PERFUME_ROLE": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "B3.2.2_MIM": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90",
+              "actual_max_pct": "90",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "MIM-UNK",
+              "kind": "MIM",
+              "declared_identity_id": "MIM-UNK",
+              "actual_min_pct": "10",
+              "actual_max_pct": "10",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "UNKNOWN",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "mim_ufi": null,
+              "mim_supplier_sds": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90",
+              "actual_max_pct": "90",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "MIM-UNK",
+              "kind": "MIM",
+              "declared_identity_id": "MIM-UNK",
+              "actual_min_pct": "10",
+              "actual_max_pct": "10",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "UNKNOWN",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "mim_ufi": null,
+              "mim_supplier_sds": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "A4.1_CLASSIFICATION": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": null,
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "A4.3_VARYING_PERFUMES": "REVIEW"
+      },
+      "kind": "edge",
+      "notes": "Actual perfume interval straddles 5.",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "94.8",
+              "actual_max_pct": "95.2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "4.8",
+              "actual_max_pct": "5.2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "95",
+              "actual_max_pct": "95",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "5",
+              "actual_max_pct": "5",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P11",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "B3.4.2_PERFUME_OMISSION": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "Internal actual required despite notification concentration omission.",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "97",
+              "actual_max_pct": "97",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "3",
+              "actual_max_pct": "3",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [
+                "Skin Sens. 1"
+              ],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE",
+              "declaration_exemption_code": "B3.4.2"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "97",
+              "actual_max_pct": "97",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "3",
+              "actual_max_pct": "3",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [
+                "Skin Sens. 1"
+              ],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE",
+              "declaration_exemption_code": "B3.4.2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "A4.3_VARYING_PERFUMES": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "97",
+              "actual_max_pct": "97",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": null,
+              "actual_max_pct": null,
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE",
+              "declaration_exemption_code": "B3.4.2"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "97",
+              "actual_max_pct": "97",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "3",
+              "actual_max_pct": "3",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P12",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "A4.3_VARYING_PERFUMES": "FAIL"
+      },
+      "kind": "edge",
+      "notes": "All three pairs eligible, triple C varying sum 8.",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "96",
+              "actual_max_pct": "96",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "4",
+              "actual_max_pct": "4",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "96",
+              "actual_max_pct": "96",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "4",
+              "actual_max_pct": "4",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic C"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "92",
+              "actual_max_pct": "92",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "4",
+              "actual_max_pct": "4",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "4",
+              "actual_max_pct": "4",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "A4.2_TRACE_COMPONENT_THRESHOLD": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "Trace identity interpretation pending source review.",
+      "regulatory_review": "Do not assert hard legal FAIL without checking notification threshold.",
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "99",
+              "actual_max_pct": "99",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "1",
+              "actual_max_pct": "1",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98.99",
+              "actual_max_pct": "98.99",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "1",
+              "actual_max_pct": "1",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            },
+            {
+              "canonical_identity_id": "TRACE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TRACE",
+              "actual_min_pct": "0.01",
+              "actual_max_pct": "0.01",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "B3.5_ICG": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90",
+              "actual_max_pct": "90",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "ICG-A",
+              "kind": "APPROVED_ICG",
+              "declared_identity_id": "ICG-CANDIDATE",
+              "actual_min_pct": "10",
+              "actual_max_pct": "10",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "icg_evidence": "UNKNOWN"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "90",
+              "actual_max_pct": "90",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "ICG-B",
+              "kind": "APPROVED_ICG",
+              "declared_identity_id": "ICG-CANDIDATE",
+              "actual_min_pct": "10",
+              "actual_max_pct": "10",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "icg_evidence": "UNKNOWN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "INPUT_BASIS": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "VOLUME_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "INPUT_TOTAL": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "99",
+              "actual_max_pct": "99",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P13",
+      "expected_status": "ELIGIBLE",
+      "expected_rules": {
+        "A4.4_PER_MIXTURE_METADATA": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
+      },
+      "kind": "positive",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Name DE"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Name FR"
+          ],
+          "market_countries": [
+            "FR"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S01",
+      "expected_status": "OUT_OF_SCOPE",
+      "expected_rules": {
+        "A2_APPLICABILITY": "OUT_OF_SCOPE"
+      },
+      "kind": "scope",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [],
+          "approved_environment_classification": [
+            "Aquatic Chronic 2"
+          ],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "expected_status": "OUT_OF_SCOPE",
+      "expected_rules": {
+        "A2_APPLICABILITY": "OUT_OF_SCOPE"
+      },
+      "kind": "scope",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Gas under pressure"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M01",
+      "expected_status": "UPDATE",
+      "expected_rules": {
+        "B4.1_LIFECYCLE": "UPDATE"
+      },
+      "kind": "lifecycle",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "97",
+              "actual_max_pct": "97",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "1",
+              "actual_max_pct": "1",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "expected_status": "UPDATE",
+      "expected_rules": {
+        "B4.1_LIFECYCLE": "UPDATE"
+      },
+      "kind": "lifecycle",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "95",
+              "actual_max_pct": "95",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-OTHER",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-OTHER",
+              "actual_min_pct": "5",
+              "actual_max_pct": "5",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "previous_declared_range": [
+                "4",
+                "6"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "93",
+              "actual_max_pct": "93",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "TEST-OTHER",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "TEST-OTHER",
+              "actual_min_pct": "7",
+              "actual_max_pct": "7",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "previous_declared_range": [
+                "4",
+                "6"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "expected_status": "SAME",
+      "expected_rules": {
+        "DETERMINISM": "PASS"
+      },
+      "kind": "property",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "expected_status": "VERSIONED",
+      "expected_rules": {
+        "RULESET_VERSION": "PASS"
+      },
+      "kind": "property",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N08",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "B3.2.3_GCI": "FAIL"
+      },
+      "kind": "edge",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "74.9999",
+              "actual_max_pct": "74.9999",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "COLOR-X",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-COLOURING-AGENTS",
+              "actual_min_pct": "25.0001",
+              "actual_max_pct": "25.0001",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "gci_evidence": "SYNTHETIC_APPROVAL",
+              "technical_function": "COLOURANT"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "74.9999",
+              "actual_max_pct": "74.9999",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "COLOR-X",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-COLOURING-AGENTS",
+              "actual_min_pct": "25.0001",
+              "actual_max_pct": "25.0001",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null,
+              "gci_evidence": "SYNTHETIC_APPROVAL",
+              "technical_function": "COLOURANT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "expected_status": "INELIGIBLE",
+      "expected_rules": {
+        "B3.2.3_GCI": "FAIL"
+      },
+      "kind": "edge",
+      "notes": "GCI 5% distinct from group exception.",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "94.9999",
+              "actual_max_pct": "94.9999",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "GCI-PERFUME",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-PERFUMES",
+              "actual_min_pct": "5.0001",
+              "actual_max_pct": "5.0001",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE",
+              "gci_evidence": "SYNTHETIC_APPROVAL",
+              "technical_function": "PERFUME"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "94.9999",
+              "actual_max_pct": "94.9999",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "GCI-PERFUME",
+              "kind": "APPROVED_GCI",
+              "declared_identity_id": "GCI-PERFUMES",
+              "actual_min_pct": "5.0001",
+              "actual_max_pct": "5.0001",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE",
+              "gci_evidence": "SYNTHETIC_APPROVAL",
+              "technical_function": "PERFUME"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R11",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "ECHA5.4_LEGAL_SUBMITTER": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": null,
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "100",
+              "actual_max_pct": "100",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "expected_status": "REVIEW_REQUIRED",
+      "expected_rules": {
+        "B3.1_PERFUME_MATRIX": "REVIEW"
+      },
+      "kind": "review",
+      "notes": "",
+      "regulatory_review": null,
+      "formulations": [
+        {
+          "id": "A",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic A"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-X",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-X",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": null,
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "revision": "r1",
+          "legal_submitter_id": "SYNTHETIC-DUTY-HOLDER-A",
+          "notification_mode": "STANDARD_FULL",
+          "composition_basis": "MASS_PERCENT",
+          "approved_health_physical_classification": [
+            "Eye Dam. 1"
+          ],
+          "approved_environment_classification": [],
+          "eupcs": [
+            "PC-CLN-1"
+          ],
+          "product_names": [
+            "Synthetic B"
+          ],
+          "market_countries": [
+            "DE"
+          ],
+          "components": [
+            {
+              "canonical_identity_id": "BASE",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "BASE",
+              "actual_min_pct": "98",
+              "actual_max_pct": "98",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": false,
+              "perfume_role_evidence": null
+            },
+            {
+              "canonical_identity_id": "P-Y",
+              "kind": "SUBSTANCE",
+              "declared_identity_id": "P-Y",
+              "actual_min_pct": "2",
+              "actual_max_pct": "2",
+              "composition_evidence": "SYNTHETIC",
+              "identity_evidence": "SYNTHETIC_VERIFIED",
+              "health_physical_classification": [],
+              "concentration_class": "OTHER",
+              "verified_perfume": true,
+              "perfume_role_evidence": "SYNTHETIC_FUNCTION_EVIDENCE"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
