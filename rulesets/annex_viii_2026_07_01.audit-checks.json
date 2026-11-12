@@ -317,5 +317,39 @@
       "expected": "PASS",
       "basis": "A.4.3; inclusive cap"
     }
-  ]
+  ],
+  "source_provenance": {
+    "title": "ECHA Guidance on harmonised information relating to emergency health response - Annex VIII to CLP",
+    "version": "6.1 August 2026",
+    "doi": "10.2823/8043435",
+    "pdf_sha256": "a6e9f336e8ee170a58fdc11e0575ff99ce375f2e1f0932bdda70f438b0a07e4d",
+    "page_numbering": "printed page = PDF page minus one",
+    "examples": {
+      "19": {
+        "printed_pages": "69",
+        "pdf_pages": "70",
+        "fixture_ids": [
+          "A-M03",
+          "A-M04",
+          "A-M05"
+        ],
+        "interpretation": "cross-band major concern range"
+      },
+      "23": {
+        "printed_pages": "77-78",
+        "pdf_pages": "78-79",
+        "fixture_ids": [
+          "A-P03",
+          "A-P04"
+        ],
+        "varying_actuals_per_member_pct": [
+          "2.8",
+          "3.2"
+        ],
+        "common_perfume": "Perfume chemical name 5"
+      }
+    },
+    "example_24_missing_exact_actuals": true,
+    "independent_golden_fixture_review_status": "PENDING"
+  }
 }
