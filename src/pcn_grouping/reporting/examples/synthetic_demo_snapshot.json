@@ -1,0 +1,427 @@
+{
+  "decision": {
+    "applicability_status": "IN_SCOPE",
+    "canonical_input_hash": "1111111111111111111111111111111111111111111111111111111111111111",
+    "common_ranges": [
+      {
+        "component_class": "other",
+        "declared_lower": "94.9999",
+        "declared_upper": "95",
+        "exact": false,
+        "member_bounds": [
+          [
+            "SYNTH-ALPHA@r1",
+            "94.9999",
+            "94.9999"
+          ],
+          [
+            "SYNTH-BETA@r2",
+            "95",
+            "95"
+          ]
+        ],
+        "notified_identity": [
+          "SUBSTANCE",
+          "SYNTH-BASE"
+        ],
+        "reason_codes": [
+          "SYNTHETIC_DISPLAY_ONLY"
+        ],
+        "status": "PASS",
+        "zone_evidence": []
+      }
+    ],
+    "component_matrix": [
+      {
+        "actual": {
+          "lower": "94.9999",
+          "upper": "94.9999"
+        },
+        "classifications": [],
+        "declaration_id": "SYNTH-D-BASE",
+        "declared_concentration_omitted": false,
+        "evidence_ids": [
+          "SYNTH-EVID-BASE"
+        ],
+        "identity_verified": true,
+        "line": [
+          "SYNTH-ALPHA",
+          "r1",
+          "L-A-BASE"
+        ],
+        "notified_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-BASE"
+        ],
+        "perfume_verified": false,
+        "raw_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-BASE"
+        ],
+        "source_document_ids": [
+          "SYNTH-DOC-A"
+        ],
+        "source_line_ids": [
+          "SYNTH-LINE-A1"
+        ]
+      },
+      {
+        "actual": {
+          "lower": "5.0001",
+          "upper": "5.0001"
+        },
+        "classifications": [],
+        "declaration_id": "SYNTH-D-P-A",
+        "declared_concentration_omitted": false,
+        "evidence_ids": [
+          "SYNTH-PERFUME-PROOF-A"
+        ],
+        "identity_verified": true,
+        "line": [
+          "SYNTH-ALPHA",
+          "r1",
+          "L-A-P"
+        ],
+        "notified_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-P-A"
+        ],
+        "perfume_verified": true,
+        "raw_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-P-A"
+        ],
+        "source_document_ids": [
+          "SYNTH-DOC-A"
+        ],
+        "source_line_ids": [
+          "SYNTH-LINE-A2"
+        ]
+      },
+      {
+        "actual": {
+          "lower": "95",
+          "upper": "95"
+        },
+        "classifications": [],
+        "declaration_id": "SYNTH-D-BASE",
+        "declared_concentration_omitted": false,
+        "evidence_ids": [
+          "SYNTH-EVID-BASE"
+        ],
+        "identity_verified": true,
+        "line": [
+          "SYNTH-BETA",
+          "r2",
+          "L-B-BASE"
+        ],
+        "notified_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-BASE"
+        ],
+        "perfume_verified": false,
+        "raw_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-BASE"
+        ],
+        "source_document_ids": [
+          "SYNTH-DOC-B"
+        ],
+        "source_line_ids": [
+          "SYNTH-LINE-B1"
+        ]
+      },
+      {
+        "actual": {
+          "lower": "5",
+          "upper": "5"
+        },
+        "classifications": [],
+        "declaration_id": "SYNTH-D-P-B",
+        "declared_concentration_omitted": false,
+        "evidence_ids": [
+          "SYNTH-PERFUME-PROOF-B"
+        ],
+        "identity_verified": true,
+        "line": [
+          "SYNTH-BETA",
+          "r2",
+          "L-B-P"
+        ],
+        "notified_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-P-B"
+        ],
+        "perfume_verified": true,
+        "raw_identity_key": [
+          "SUBSTANCE",
+          "SYNTH-P-B"
+        ],
+        "source_document_ids": [
+          "SYNTH-DOC-B"
+        ],
+        "source_line_ids": [
+          "SYNTH-LINE-B2"
+        ]
+      }
+    ],
+    "dossier_status": "REVIEW",
+    "formulation_revision_ids": [
+      "SYNTH-BETA@r2",
+      "SYNTH-ALPHA@r1"
+    ],
+    "missing_data_flags": [
+      "REG-DOSSIER:TOX_INFO_MISSING",
+      "E-RULESET:RULESET_NOT_APPROVED"
+    ],
+    "perfume_classification_matrix": [
+      [
+        "SYNTH-ALPHA@r1",
+        "SUBSTANCE:SYNTH-P-A",
+        [
+          [
+            "Skin Sens.",
+            "1",
+            "H317",
+            "",
+            ""
+          ]
+        ]
+      ],
+      [
+        "SYNTH-BETA@r2",
+        "SUBSTANCE:SYNTH-P-B",
+        [
+          [
+            "Skin Sens.",
+            "1",
+            "H317",
+            "",
+            ""
+          ]
+        ]
+      ]
+    ],
+    "rule_results": [
+      {
+        "evidence_ids": [
+          "SYNTH-PERFUME-PROOF-A"
+        ],
+        "explanation": "synthetic example: 5.0001 exceeds 5.0000",
+        "rule_id": "REG-PERFUME-CAP",
+        "source_sections": [
+          "Annex VIII A.4.3"
+        ],
+        "status": "FAIL",
+        "values": [
+          [
+            "code",
+            "VARYING_PERFUME_OVER_5"
+          ],
+          [
+            "member",
+            "SYNTH-ALPHA@r1"
+          ]
+        ]
+      },
+      {
+        "evidence_ids": [
+          "SYNTH-CLP"
+        ],
+        "explanation": "example-only matched classification",
+        "rule_id": "REG-CLASS",
+        "source_sections": [
+          "Annex VIII A.4.1"
+        ],
+        "status": "PASS",
+        "values": [
+          [
+            "code",
+            "MATCH"
+          ]
+        ]
+      },
+      {
+        "evidence_ids": [],
+        "explanation": "missing synthetic toxicology for alpha",
+        "rule_id": "REG-DOSSIER",
+        "source_sections": [
+          "Annex VIII A.4.4"
+        ],
+        "status": "REVIEW",
+        "values": [
+          [
+            "code",
+            "TOX_INFO_MISSING"
+          ]
+        ]
+      },
+      {
+        "evidence_ids": [],
+        "explanation": "illustration is not a real ruleset approval",
+        "rule_id": "E-RULESET",
+        "source_sections": [
+          "Annex VIII; version governance"
+        ],
+        "status": "REVIEW",
+        "values": [
+          [
+            "code",
+            "RULESET_NOT_APPROVED"
+          ]
+        ]
+      },
+      {
+        "evidence_ids": [
+          "SYNTH-RANGE-PROOF"
+        ],
+        "explanation": "synthetic shared component range for display only",
+        "rule_id": "REG-COMMON-RANGE",
+        "source_sections": [
+          "Annex VIII A.4.2"
+        ],
+        "status": "PASS",
+        "values": [
+          [
+            "code",
+            "RANGE_REPRESENTABLE"
+          ]
+        ]
+      }
+    ],
+    "ruleset": {
+      "effective_date": "2026-07-01",
+      "ruleset_id": "SYNTHETIC-DEMO-RULES",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "RESEARCH_DRAFT_NOT_EXECUTABLE_NOT_LEGAL_APPROVAL"
+    },
+    "status": "INELIGIBLE",
+    "varying_perfume_totals": [
+      {
+        "actual": {
+          "lower": "5",
+          "upper": "5"
+        },
+        "line_ids": [
+          "L-B-P"
+        ],
+        "membership_verified": true,
+        "revision": [
+          "SYNTH-BETA",
+          "r2"
+        ]
+      },
+      {
+        "actual": {
+          "lower": "5.0001",
+          "upper": "5.0001"
+        },
+        "line_ids": [
+          "L-A-P"
+        ],
+        "membership_verified": true,
+        "revision": [
+          "SYNTH-ALPHA",
+          "r1"
+        ]
+      }
+    ]
+  },
+  "formulations": [
+    {
+      "approved_environment_classification": [],
+      "approved_health_physical_classification": [
+        {
+          "category": "1",
+          "h_code": "H317",
+          "hazard_class": "Skin Sens.",
+          "qualifier": null,
+          "route": null,
+          "source_document_ids": [
+            "SYNTH-CLP"
+          ],
+          "status": "VERIFIED"
+        }
+      ],
+      "colour": "BLUE",
+      "eupcs_codes": [
+        "PC-CLN-0"
+      ],
+      "formulation_id": "SYNTH-ALPHA",
+      "legal_submitter_id": "SYNTH-DUTY-HOLDER",
+      "market_countries": [
+        "XX"
+      ],
+      "packaging": [
+        "1L synthetic bottle"
+      ],
+      "ph": "7.1",
+      "physical_state": "LIQUID",
+      "product_names": [
+        "Synthetic Example Alpha"
+      ],
+      "revision": "r1",
+      "sds_section_11": null,
+      "source_references": [
+        {
+          "document_id": "SYNTH-DOC-A",
+          "location": "row 1"
+        }
+      ],
+      "ufis": [
+        "SYNTHETIC-PLACEHOLDER-ONLY"
+      ],
+      "use_types": [
+        "CONSUMER"
+      ]
+    },
+    {
+      "approved_environment_classification": [],
+      "approved_health_physical_classification": [
+        {
+          "category": "1",
+          "h_code": "H317",
+          "hazard_class": "Skin Sens.",
+          "qualifier": null,
+          "route": null,
+          "source_document_ids": [
+            "SYNTH-CLP"
+          ],
+          "status": "VERIFIED"
+        }
+      ],
+      "colour": "GREEN",
+      "eupcs_codes": [
+        "PC-CLN-0"
+      ],
+      "formulation_id": "SYNTH-BETA",
+      "legal_submitter_id": "SYNTH-DUTY-HOLDER",
+      "market_countries": [
+        "XY"
+      ],
+      "packaging": [
+        "500mL synthetic bottle"
+      ],
+      "ph": "7.0",
+      "physical_state": "LIQUID",
+      "product_names": [
+        "Synthetic Example Beta"
+      ],
+      "revision": "r2",
+      "sds_section_11": "Example-only toxicology text",
+      "source_references": [
+        {
+          "document_id": "SYNTH-DOC-B",
+          "location": "row 2"
+        }
+      ],
+      "ufis": [
+        "SYNTHETIC-PLACEHOLDER-ONLY"
+      ],
+      "use_types": [
+        "PROFESSIONAL"
+      ]
+    }
+  ],
+  "schema_version": "1"
+}
