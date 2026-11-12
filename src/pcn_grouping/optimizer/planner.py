@@ -156,7 +156,8 @@ def _approved_signature(formulation: object, context: object) -> str | None:
                 or not all(isinstance(s, str) and s.strip() for s in parts[:3])
                 or any(s is not None and not isinstance(s, str) for s in parts[3:])):
             return None
-        signature.append(tuple(part or "" for part in parts))  # type: ignore[arg-type]
+        signature.append((str(parts[0]), str(parts[1]), str(parts[2]),
+                          str(parts[3] or ""), str(parts[4] or "")))
     return json.dumps(sorted(signature), separators=(",", ":"), ensure_ascii=True)
 
 
