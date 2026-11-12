@@ -76,12 +76,26 @@ class _Zone:
         )
 
 
+def _canonical(value: Decimal) -> Decimal:
+    """Strip redundant trailing zeros without ambient-context rounding."""
+    parts = value.as_tuple()
+    digits = list(parts.digits)
+    exponent = parts.exponent
+    while len(digits) > 1 and digits[-1] == 0 and exponent < 0:
+        digits.pop()
+        exponent += 1
+    if 0 < exponent <= 2:
+        digits.extend((0,) * exponent)
+        exponent = 0
+    return Decimal((parts.sign, tuple(digits), exponent))
+
+
 def _decimal(raw: Any) -> Decimal | None:
-    if type(raw) is Decimal:
-        return raw if raw.is_finite() else None
+    if isinstance(raw, Decimal):
+        return _canonical(raw) if raw.is_finite() else None
     if isinstance(raw, str) and _DECIMAL_TEXT.fullmatch(raw):
         value = Decimal(raw)
-        return value if value.is_finite() else None
+        return _canonical(value) if value.is_finite() else None
     return None
 
 
@@ -89,7 +103,7 @@ def _actual_interval(raw: Any) -> tuple[Decimal, Decimal] | None:
     """Duck-types Agent B's immutable models, without importing an unmerged PR."""
     if raw is None:
         return None
-    if type(raw) is Decimal or isinstance(raw, str):
+    if isinstance(raw, (Decimal, str)):
         val = _decimal(raw)
         return (val, val) if val is not None else None
     if hasattr(raw, "value"):
@@ -123,7 +137,7 @@ def _exact_width(low: Decimal, high: Decimal) -> Decimal:
     diff = integer_at_scale(high) - integer_at_scale(low)
     if diff < 0:
         raise ValueError("range endpoints are reversed")
-    digits = tuple(int(char) for char in str(diff))
+    digits = Decimal(diff).as_tuple().digits  # No Python int-to-str digit limit.
     return Decimal((0, digits, -scale))
 
 
