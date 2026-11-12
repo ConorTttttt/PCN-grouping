@@ -1,0 +1,129 @@
+{
+  "ruleset_id": "EU_CLP_ANNEX_VIII_2026_07_01_RESEARCH_DRAFT",
+  "status": "RESEARCH_DRAFT_NOT_EXECUTABLE_NOT_LEGAL_APPROVAL",
+  "research_date": "2026-11-12",
+  "legal_effective_consolidation": "2026-07-01",
+  "guidance_version": "6.1 (August 2026)",
+  "references": {
+    "annex_viii": "https://eur-lex.europa.eu/eli/reg/2008/1272/2026-07-01/eng",
+    "replacement": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R1677",
+    "echa_guidance": "https://echa.europa.eu/-/guidance-on-annex-viii-to-clp"
+  },
+  "group_finished_mixture": {
+    "statutory_sections": [
+      "A.4.1",
+      "A.4.2",
+      "A.4.3",
+      "A.4.4",
+      "B.3.1"
+    ],
+    "same_health_physical_hazard_classification": true,
+    "same_product_category_required": false,
+    "environmental_hazard_difference_permitted": true,
+    "one_legal_submitter_required": true,
+    "same_declared_components_and_ranges_required": true,
+    "different_components_must_be_verified_perfumes": true,
+    "maximum_differing_perfume_pct_per_mixture": "5",
+    "varying_perfumes_mapped_per_mixture": true,
+    "varying_perfumes_classification_required": true
+  },
+  "generic_component_identifiers": {
+    "statutory_section": "B.3.2.3",
+    "permitted": [
+      "perfumes",
+      "colouring agents"
+    ],
+    "requires_exclusive_function": true,
+    "prohibits_health_hazard_classification": true,
+    "max_total_perfume_gci_pct": "5",
+    "max_total_colouring_agents_gci_pct": "25"
+  },
+  "major_concern_component_hazard_categories": [
+    "Acute Tox. 1",
+    "Acute Tox. 2",
+    "Acute Tox. 3",
+    "STOT SE 1",
+    "STOT SE 2",
+    "STOT RE 1",
+    "STOT RE 2",
+    "Skin Corr. 1",
+    "Skin Corr. 1A",
+    "Skin Corr. 1B",
+    "Skin Corr. 1C",
+    "Eye Dam. 1"
+  ],
+  "maximum_concentration_range_width_percentage_points": {
+    "major_concern": [
+      {
+        "min_inclusive": "25",
+        "max_exclusive": "100",
+        "max_width": "5"
+      },
+      {
+        "min_inclusive": "10",
+        "max_exclusive": "25",
+        "max_width": "3"
+      },
+      {
+        "min_inclusive": "1",
+        "max_exclusive": "10",
+        "max_width": "1"
+      },
+      {
+        "min_inclusive": "0.1",
+        "max_exclusive": "1",
+        "max_width": "0.3"
+      },
+      {
+        "min_exclusive": "0",
+        "max_exclusive": "0.1",
+        "max_width": "0.1"
+      }
+    ],
+    "other": [
+      {
+        "min_inclusive": "25",
+        "max_exclusive": "100",
+        "max_width": "20"
+      },
+      {
+        "min_inclusive": "10",
+        "max_exclusive": "25",
+        "max_width": "10"
+      },
+      {
+        "min_inclusive": "1",
+        "max_exclusive": "10",
+        "max_width": "3"
+      },
+      {
+        "min_exclusive": "0",
+        "max_exclusive": "1",
+        "max_width": "1"
+      }
+    ]
+  },
+  "disclosure_thresholds_pct": {
+    "health_or_physical_hazardous_standard": "0.1",
+    "identified_hazardous_below_point_one": "include_unless_documented_irrelevant",
+    "identified_not_health_or_physical_hazardous": "1"
+  },
+  "perfume_concentration_omission_in_group": {
+    "statutory_section": "B.3.4.2",
+    "if_not_classified_or_only": [
+      "Skin Sens. 1",
+      "Skin Sens. 1A",
+      "Skin Sens. 1B",
+      "Asp. Tox."
+    ],
+    "actual_concentration_still_required_for_group_threshold": true
+  },
+  "unsupported_in_phase_1": [
+    "new ICG approvals",
+    "limited submissions",
+    "standard formula derogations",
+    "fuel derogations",
+    "mixture classification calculation",
+    "submission portal integration"
+  ]
+}
