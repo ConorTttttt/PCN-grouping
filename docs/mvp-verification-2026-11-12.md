@@ -65,7 +65,7 @@ python -m pytest -q
 - F independent fixture adapter and true ECHA examples 23–24 reviewer-validated replay are unverified.
 - G optimiser and I reporting not yet added; end-to-end B→C/D→E→G→I and replay bytes are **NOT VERIFIED**.
 - H input adapter / live Sheets credentials and real spreadsheet schema are not supplied; no live customer data or supplier SDS used.
-- Source-object graft and synthetic test additions contain no intentional production mixtures, SDS or secrets. Independent repository secret/privacy scan and audit remain open.
+- Source-object graft and synthetic test additions contain no intentional production mixtures, SDS or secrets. A **limited read-only regex secret scan** of all **47 text files** in the integration tree at commit `4477292c54fda2a5bc20011bb1ba9c3ce7f53c93` completed: **47 readable, 0 matching strings** for GitHub classic/fine-grained PATs, common AWS access-key IDs, PEM private-key headers, Google API keys and Slack tokens; **0** `.env`, `.pem`, `.key`, `.p12` or `.pfx` filenames. This is **not** a comprehensive secrets/PII/chemical-data scan; independent privacy/security audit remains open.
 - Independent code owner reviews, regulatory SME signoff and a reproducible full Python 3.12 CI run remain mandatory.
 
 ## Stop/go decision
