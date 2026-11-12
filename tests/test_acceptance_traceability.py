@@ -28,6 +28,17 @@ def test_traceability_report_matches_case_oracles() -> None:
         for ids in statuses.values():
             ids.sort()
     assert report["rule_coverage"] == expected
+    by_kind: dict[str, dict[str, list[str]]] = {}
+    for case in cases:
+        for rule in case["expected_rules"]:
+            by_kind.setdefault(rule, {
+                "positive": [], "negative": [], "edge": [], "review": [],
+                "scope": [], "lifecycle": [], "property": [],
+            })[case["kind"]].append(case["id"])
+    for kinds in by_kind.values():
+        for ids in kinds.values():
+            ids.sort()
+    assert report["by_case_kind"] == by_kind
 
 
 def test_primary_hard_gates_have_passing_and_failing_cases() -> None:
