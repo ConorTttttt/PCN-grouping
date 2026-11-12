@@ -2,6 +2,11 @@
 
 **Snapshot:** 2026-11-12; base `main` at `8531f9640cfe8a4d0850ef46b55c2e741c19d37e` when this plan began. **State: PLAN ONLY; no integrated engine, passing CI, legal approval, or end-to-end demo yet.** This plan is a coordination contract; it does not change or approve regulatory rules.
 
+
+## Execution update — 12 November 2026 (not an approval)
+
+The original plan below is retained as a historical contract. Current live PR/dependency and observed CI evidence are pinned in [mvp-verification-2026-11-12.md](mvp-verification-2026-11-12.md). PRs #13–#20 now exist and remain draft. The integration branch `agent/mvp-integration-2026-11-12` is stacked on E #19 (which contains B/D); C, A, F and J source trees were incorporated as unchanged Git objects. No PR merged. Integration source tests using real C/D/E were added, but **no integrated test execution has been verified**. GitHub Actions run #23 failed without executing job steps (0 ms runner time). The F-owned independent fixture bridge is still missing; no acceptance gate may be waived. **G #16 and I #20 will be staged only after executable green integrated eligibility tests.**
+
 ## Ownership, dependencies and merge order
 
 | Stage | Issue / agent | Owned work | Required dependency and integration gate |
