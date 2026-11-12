@@ -26,7 +26,7 @@ The tested files are byte-identical to the GitHub uploaded blobs
 (`git hash-object` verified):
 
 - `src/pcn_grouping/optimizer/planner.py` —
-  `d761daf9fcab9e95b8e5848decfcd4f4df0c4bb3`
+  `e27eb563ebd0d1ddbc6e78c88c646aea5af62d56`
 - `tests/optimizer/test_contract.py` —
   `b49031fd2485f7d90aed5a4aa036657f00faf0f1`
 
