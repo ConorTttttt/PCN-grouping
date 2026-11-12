@@ -1,0 +1,321 @@
+{
+  "schema_version": "1.0",
+  "suite": "REGULATORY_AUDIT_DECLARATIVE_FIXTURES",
+  "authoring_status": "UNSIGNED_RESEARCH_DRAFT_FOR_INDEPENDENT_QA",
+  "audit_date": "2026-11-12",
+  "scope": "Source-backed arithmetic boundary and missing-evidence reference cases; does not prove finished-mixture legal eligibility",
+  "rulebook": "rulesets/annex_viii_2026_07_01.research-draft.json",
+  "matrix": "docs/rule-traceability-matrix.md",
+  "numeric_type": "decimal-string-exact; null means unknown, not zero",
+  "result_semantics": "Draft expected component-level PASS|FAIL|REVIEW. No group eligibility or submission verdict. Independent Agent F regression and SME review mandatory.",
+  "source_ids": [
+    "Annex VIII A.4.3",
+    "Annex VIII B.3.4.1 Table 1",
+    "Annex VIII B.3.4.2 Table 2",
+    "ECHA v6.0 Guidance §5.3.3.3, §5.4.2, examples 19 and 23"
+  ],
+  "checks": [
+    {
+      "id": "A-M01",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "9.7",
+        "10.5"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.1; ECHA example 19 cross-band"
+    },
+    {
+      "id": "A-M02",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "9",
+        "11"
+      ],
+      "expected": "FAIL",
+      "basis": "B.3.4.1; narrower <10 zone"
+    },
+    {
+      "id": "A-M03",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "23",
+        "26"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.1; ECHA example 19"
+    },
+    {
+      "id": "A-M04",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "24",
+        "29"
+      ],
+      "expected": "FAIL",
+      "basis": "B.3.4.1; ECHA example 19"
+    },
+    {
+      "id": "A-M05",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "25",
+        "30"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.1; ECHA example 19"
+    },
+    {
+      "id": "A-M06",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "0.05",
+        "0.15"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.1; 0.1 boundary"
+    },
+    {
+      "id": "A-M07",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "0.0500",
+        "0.1501"
+      ],
+      "expected": "FAIL",
+      "basis": "B.3.4.1; 0.1 boundary"
+    },
+    {
+      "id": "A-M08",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "0.1",
+        "0.4"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.1; width exactly 0.3"
+    },
+    {
+      "id": "A-M09",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "0.1",
+        "0.4001"
+      ],
+      "expected": "FAIL",
+      "basis": "B.3.4.1; width >0.3"
+    },
+    {
+      "id": "A-M10",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "0.9",
+        "1.2"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.1; cross 1%"
+    },
+    {
+      "id": "A-M11",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "0.8",
+        "1.2"
+      ],
+      "expected": "FAIL",
+      "basis": "B.3.4.1; cross 1%"
+    },
+    {
+      "id": "A-M12",
+      "rule_id": "REG-MAJOR-BAND",
+      "operation": "common_range",
+      "component_class": "major_concern",
+      "values": [
+        "99",
+        "100"
+      ],
+      "expected": "REVIEW",
+      "basis": "Printed top band excludes exactly 100"
+    },
+    {
+      "id": "A-O01",
+      "rule_id": "REG-OTHER-BAND",
+      "operation": "common_range",
+      "component_class": "other",
+      "values": [
+        "4",
+        "6"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.2"
+    },
+    {
+      "id": "A-O02",
+      "rule_id": "REG-OTHER-BAND",
+      "operation": "common_range",
+      "component_class": "other",
+      "values": [
+        "3",
+        "7"
+      ],
+      "expected": "FAIL",
+      "basis": "B.3.4.2"
+    },
+    {
+      "id": "A-O03",
+      "rule_id": "REG-OTHER-BAND",
+      "operation": "common_range",
+      "component_class": "other",
+      "values": [
+        "9.7",
+        "10.5"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.2"
+    },
+    {
+      "id": "A-O04",
+      "rule_id": "REG-OTHER-BAND",
+      "operation": "common_range",
+      "component_class": "other",
+      "values": [
+        "0.1",
+        "1.0"
+      ],
+      "expected": "PASS",
+      "basis": "B.3.4.2"
+    },
+    {
+      "id": "A-O05",
+      "rule_id": "REG-OTHER-BAND",
+      "operation": "common_range",
+      "component_class": "other",
+      "values": [
+        "0",
+        "0.2"
+      ],
+      "expected": "REVIEW",
+      "basis": "Absent versus present component; representation unresolved"
+    },
+    {
+      "id": "A-O06",
+      "rule_id": "REG-OTHER-BAND",
+      "operation": "common_range",
+      "component_class": "other",
+      "values": [
+        "1",
+        "4.0001"
+      ],
+      "expected": "FAIL",
+      "basis": "B.3.4.2; width >3"
+    },
+    {
+      "id": "A-P01",
+      "rule_id": "REG-PERFUME-CAP",
+      "operation": "varying_perfume_total",
+      "component_class": null,
+      "values": [
+        "2.0",
+        "3.0000"
+      ],
+      "expected": "PASS",
+      "basis": "A.4.3; exactly 5.0000"
+    },
+    {
+      "id": "A-P02",
+      "rule_id": "REG-PERFUME-CAP",
+      "operation": "varying_perfume_total",
+      "component_class": null,
+      "values": [
+        "2.0",
+        "3.0001"
+      ],
+      "expected": "FAIL",
+      "basis": "A.4.3; 5.0001"
+    },
+    {
+      "id": "A-P03",
+      "rule_id": "REG-PERFUME-CAP",
+      "operation": "varying_perfume_total",
+      "component_class": null,
+      "values": [
+        "1.2",
+        "0.6",
+        "1.0"
+      ],
+      "expected": "PASS",
+      "basis": "ECHA example 23; varying perfumes in first mixture only"
+    },
+    {
+      "id": "A-P04",
+      "rule_id": "REG-PERFUME-CAP",
+      "operation": "varying_perfume_total",
+      "component_class": null,
+      "values": [
+        "0.4",
+        "1.4",
+        "1.4"
+      ],
+      "expected": "PASS",
+      "basis": "ECHA example 23; varying perfumes in second mixture only"
+    },
+    {
+      "id": "A-P05",
+      "rule_id": "REG-PERFUME-CAP",
+      "operation": "varying_perfume_total",
+      "component_class": null,
+      "values": [
+        "4.8",
+        null
+      ],
+      "expected": "REVIEW",
+      "basis": "Missing actual concentration; cannot assume zero"
+    },
+    {
+      "id": "A-P06",
+      "rule_id": "REG-PERFUME-CAP",
+      "operation": "varying_perfume_total",
+      "component_class": null,
+      "values": [
+        "4.8",
+        "0.2001"
+      ],
+      "expected": "FAIL",
+      "basis": "A.4.3; group cap crossed"
+    },
+    {
+      "id": "A-P07",
+      "rule_id": "REG-PERFUME-CAP",
+      "operation": "varying_perfume_total",
+      "component_class": null,
+      "values": [
+        "0",
+        "5"
+      ],
+      "expected": "PASS",
+      "basis": "A.4.3; inclusive cap"
+    }
+  ]
+}
