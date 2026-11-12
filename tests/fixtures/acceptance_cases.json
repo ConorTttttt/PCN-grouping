@@ -10,7 +10,12 @@
       "id": "P01",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.2_COMPONENT_IDENTITY": "PASS"
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "",
@@ -92,7 +97,12 @@
       "id": "P02",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.3_VARYING_PERFUMES": "PASS"
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "",
@@ -200,7 +210,12 @@
       "id": "P03",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.3_VARYING_PERFUMES": "PASS"
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "Common perfume P-Z must not count against varying threshold.",
@@ -334,7 +349,12 @@
       "id": "P04",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.3_VARYING_PERFUMES": "PASS"
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "edge",
       "notes": "",
@@ -823,7 +843,12 @@
       "id": "P05",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.1_CLASSIFICATION": "PASS"
+        "A4.1_CLASSIFICATION": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "",
@@ -907,7 +932,13 @@
       "id": "P06",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.1_NO_EUPCS_GATE": "PASS"
+        "A4.1_NO_EUPCS_GATE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "Chemical eligibility only, dossier metadata separate.",
@@ -989,7 +1020,12 @@
       "id": "P07",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.2_DECLARED_RANGE": "PASS"
+        "A4.2_DECLARED_RANGE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "edge",
       "notes": "",
@@ -1209,7 +1245,12 @@
       "id": "P08",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.2_DECLARED_RANGE": "PASS"
+        "A4.2_DECLARED_RANGE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "edge",
       "notes": "",
@@ -1429,7 +1470,12 @@
       "id": "P09",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.2_DECLARED_RANGE": "PASS"
+        "A4.2_DECLARED_RANGE": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "edge",
       "notes": "",
@@ -1645,7 +1691,13 @@
       "id": "P10",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "B3.2.3_GCI": "PASS"
+        "B3.2.3_GCI": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "Conditional validated GCI representation.",
@@ -2277,7 +2329,13 @@
       "id": "P11",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "B3.4.2_PERFUME_OMISSION": "PASS"
+        "B3.4.2_PERFUME_OMISSION": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "Internal actual required despite notification concentration omission.",
@@ -3064,7 +3122,13 @@
       "id": "P13",
       "expected_status": "ELIGIBLE",
       "expected_rules": {
-        "A4.4_PER_MIXTURE_METADATA": "PASS"
+        "A4.4_PER_MIXTURE_METADATA": "PASS",
+        "ECHA5.4_LEGAL_SUBMITTER": "PASS",
+        "A4.1_CLASSIFICATION": "PASS",
+        "A4.2_COMPONENT_IDENTITY": "PASS",
+        "A4.2_DECLARED_RANGE": "PASS",
+        "A4.3_VARYING_PERFUMES": "PASS",
+        "B3.1_PERFUME_MATRIX": "PASS"
       },
       "kind": "positive",
       "notes": "",
