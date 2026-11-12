@@ -6,7 +6,18 @@
   "rule_coverage": {
     "A4.2_COMPONENT_IDENTITY": {
       "PASS": [
-        "P01"
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P13"
       ],
       "FAIL": [
         "N02"
@@ -15,11 +26,92 @@
       "OUT_OF_SCOPE": [],
       "UPDATE": []
     },
-    "A4.3_VARYING_PERFUMES": {
+    "ECHA5.4_LEGAL_SUBMITTER": {
       "PASS": [
+        "P01",
         "P02",
         "P03",
-        "P04"
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "FAIL": [
+        "N04"
+      ],
+      "REVIEW": [
+        "R11"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.1_CLASSIFICATION": {
+      "PASS": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "FAIL": [
+        "N03"
+      ],
+      "REVIEW": [
+        "R04"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.2_DECLARED_RANGE": {
+      "PASS": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "FAIL": [
+        "N05",
+        "N06",
+        "N07"
+      ],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.3_VARYING_PERFUMES": {
+      "PASS": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P13"
       ],
       "FAIL": [
         "N01",
@@ -32,26 +124,24 @@
       "OUT_OF_SCOPE": [],
       "UPDATE": []
     },
-    "A4.1_CLASSIFICATION": {
+    "B3.1_PERFUME_MATRIX": {
       "PASS": [
-        "P05"
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P13"
       ],
-      "FAIL": [
-        "N03"
-      ],
+      "FAIL": [],
       "REVIEW": [
-        "R04"
-      ],
-      "OUT_OF_SCOPE": [],
-      "UPDATE": []
-    },
-    "ECHA5.4_LEGAL_SUBMITTER": {
-      "PASS": [],
-      "FAIL": [
-        "N04"
-      ],
-      "REVIEW": [
-        "R11"
+        "R12"
       ],
       "OUT_OF_SCOPE": [],
       "UPDATE": []
@@ -61,21 +151,6 @@
         "P06"
       ],
       "FAIL": [],
-      "REVIEW": [],
-      "OUT_OF_SCOPE": [],
-      "UPDATE": []
-    },
-    "A4.2_DECLARED_RANGE": {
-      "PASS": [
-        "P07",
-        "P08",
-        "P09"
-      ],
-      "FAIL": [
-        "N05",
-        "N06",
-        "N07"
-      ],
       "REVIEW": [],
       "OUT_OF_SCOPE": [],
       "UPDATE": []
@@ -201,15 +276,6 @@
       ],
       "FAIL": [],
       "REVIEW": [],
-      "OUT_OF_SCOPE": [],
-      "UPDATE": []
-    },
-    "B3.1_PERFUME_MATRIX": {
-      "PASS": [],
-      "FAIL": [],
-      "REVIEW": [
-        "R12"
-      ],
       "OUT_OF_SCOPE": [],
       "UPDATE": []
     }
