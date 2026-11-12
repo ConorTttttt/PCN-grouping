@@ -350,6 +350,56 @@
       }
     },
     "example_24_missing_exact_actuals": true,
-    "independent_golden_fixture_review_status": "PENDING"
-  }
+    "independent_golden_fixture_review_status": "PENDING",
+    "legal_pdf_sources": [
+      {
+        "id": "CLP_ANNEX_VIII_2026_EXTRACT",
+        "sha256": "50001b176326ee6dae56cc163c0f3b344ec850cd9c2a7527f8db0de6eb78d2a1"
+      },
+      {
+        "id": "CLP_ANNEX_VIII_PARTIAL_PART_D_2026_EXTRACT",
+        "sha256": "8f7d3aad6ec44bad13127df49f464f64ca6effa6c716c20eacee625d2c97e8e7"
+      }
+    ],
+    "regulatory_date_audit": "docs/regulatory-annex-viii-2026-source-audit.md",
+    "date_feature_cases_independent_qa_status": "REFERENCE_ONLY_PENDING_AGENT_F_CI_AND_SME_REVIEW"
+  },
+  "effective_date_checks": [
+    {
+      "id": "A-DATE-2026",
+      "rule_id": "REG-UPDATE",
+      "operation": "future_fifth_indent_active",
+      "as_of_date": "2026-11-12",
+      "expected": false,
+      "regulatory_reason": "2026-07-01 Annex VIII B.4.1 contains four top-level update indents; 2027 fifth indent not active",
+      "statutory_source": "CLP Annex VIII consolidated 2026-07-01, Part B §4.1; Regulation 2024/2865 Annex IV"
+    },
+    {
+      "id": "A-DATE-YEAR-END",
+      "rule_id": "REG-UPDATE",
+      "operation": "future_fifth_indent_active",
+      "as_of_date": "2026-12-31",
+      "expected": false,
+      "regulatory_reason": "Last day before future Article 2(3) Annex IV application",
+      "statutory_source": "Regulation 2024/2865 Art. 2(3), amended by 2025/2439"
+    },
+    {
+      "id": "A-DATE-2027",
+      "rule_id": "REG-UPDATE",
+      "operation": "future_fifth_indent_active",
+      "as_of_date": "2027-01-01",
+      "expected": true,
+      "regulatory_reason": "Future fifth indent becomes effective, subject to statute and SME validation at time of implementation",
+      "statutory_source": "Regulation 2024/2865 Annex IV / Art. 2(3), amended by 2025/2439"
+    },
+    {
+      "id": "A-DATE-UNKNOWN",
+      "rule_id": "REG-UPDATE",
+      "operation": "future_fifth_indent_active",
+      "as_of_date": null,
+      "expected": "REVIEW",
+      "regulatory_reason": "Unknown evaluation date cannot infer current or future law",
+      "statutory_source": "Date-versioned statutory applicability safeguard"
+    }
+  ]
 }
