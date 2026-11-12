@@ -1,0 +1,223 @@
+{
+  "schema": "pcn-rule-traceability-draft-v1",
+  "source": "tests/fixtures/acceptance_cases.json",
+  "legal_review": "PENDING_AGENT_A",
+  "explanation": "A rule lacks a type when that list is empty. These are gaps, not silently claimed coverage. Requirement-level expectations remain draft until legal review and evaluator integration.",
+  "rule_coverage": {
+    "A4.2_COMPONENT_IDENTITY": {
+      "PASS": [
+        "P01"
+      ],
+      "FAIL": [
+        "N02"
+      ],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.3_VARYING_PERFUMES": {
+      "PASS": [
+        "P02",
+        "P03",
+        "P04"
+      ],
+      "FAIL": [
+        "N01",
+        "P12"
+      ],
+      "REVIEW": [
+        "R05",
+        "R06"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.1_CLASSIFICATION": {
+      "PASS": [
+        "P05"
+      ],
+      "FAIL": [
+        "N03"
+      ],
+      "REVIEW": [
+        "R04"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "ECHA5.4_LEGAL_SUBMITTER": {
+      "PASS": [],
+      "FAIL": [
+        "N04"
+      ],
+      "REVIEW": [
+        "R11"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.1_NO_EUPCS_GATE": {
+      "PASS": [
+        "P06"
+      ],
+      "FAIL": [],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.2_DECLARED_RANGE": {
+      "PASS": [
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "FAIL": [
+        "N05",
+        "N06",
+        "N07"
+      ],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "B3.2.3_GCI": {
+      "PASS": [
+        "P10"
+      ],
+      "FAIL": [
+        "N08",
+        "N09"
+      ],
+      "REVIEW": [
+        "R01"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.3_PERFUME_ROLE": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [
+        "R02"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "B3.2.2_MIM": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [
+        "R03"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "B3.4.2_PERFUME_OMISSION": {
+      "PASS": [
+        "P11"
+      ],
+      "FAIL": [],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.2_TRACE_COMPONENT_THRESHOLD": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [
+        "R10"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "B3.5_ICG": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [
+        "R07"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "INPUT_BASIS": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [
+        "R08"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "INPUT_TOTAL": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [
+        "R09"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A4.4_PER_MIXTURE_METADATA": {
+      "PASS": [
+        "P13"
+      ],
+      "FAIL": [],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "A2_APPLICABILITY": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [
+        "S01",
+        "S02"
+      ],
+      "UPDATE": []
+    },
+    "B4.1_LIFECYCLE": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": [
+        "M01",
+        "M02"
+      ]
+    },
+    "DETERMINISM": {
+      "PASS": [
+        "M03"
+      ],
+      "FAIL": [],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "RULESET_VERSION": {
+      "PASS": [
+        "M04"
+      ],
+      "FAIL": [],
+      "REVIEW": [],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    },
+    "B3.1_PERFUME_MATRIX": {
+      "PASS": [],
+      "FAIL": [],
+      "REVIEW": [
+        "R12"
+      ],
+      "OUT_OF_SCOPE": [],
+      "UPDATE": []
+    }
+  },
+  "known_review_conditions": [
+    "P10: conditional GCI grouping requires legal audit",
+    "R10: trace ingredient rule is pending legal interpretation",
+    "ECHA examples 23-24: guidance source excerpts independently checked, but full actual BOM/percentages absent",
+    "No live evaluator bridge while Agent E is pending"
+  ]
+}
