@@ -85,18 +85,18 @@ def test_evaluator_whole_group_permutation_invariance(
     assert before["status"] == "INELIGIBLE"
 
 
-@settings(max_examples=40, deadline=None)
-@given(st.sampled_from(["P02", "P03", "P04"]), st.booleans())
-def test_valid_subset_remains_valid_when_member_removed(
-    case_id: str, reverse: bool
+@settings(max_examples=25, deadline=None)
+@given(st.permutations((0, 1, 2)))
+def test_pairwise_subsets_do_not_override_whole_group_failure(
+    order: tuple[int, ...]
 ) -> None:
     adapter = _adapter()
-    case = next(case for case in _cases() if case["id"] == case_id)
-    if reverse:
-        case = copy.deepcopy(case)
-        case["formulations"] = list(reversed(case["formulations"]))
-    result = adapter.evaluate(case)
-    assert result["status"] == "ELIGIBLE"
-    # A singleton is not a group submission; this checks that no subset produces
-    # a contradictory hard rule from unrelated formulation data.
-    assert len(case["formulations"]) >= 2
+    whole = next(case for case in _cases() if case["id"] == "P12")
+    assert adapter.evaluate(copy.deepcopy(whole))["status"] == "INELIGIBLE"
+    for excluded in range(3):
+        pair_case = copy.deepcopy(whole)
+        pair_case["formulations"] = [
+            whole["formulations"][i] for i in order if i != excluded
+        ]
+        assert len(pair_case["formulations"]) == 2
+        assert adapter.evaluate(pair_case)["status"] == "ELIGIBLE"
