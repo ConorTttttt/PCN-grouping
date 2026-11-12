@@ -35,12 +35,22 @@
       "different_components_must_be_verified_perfumes": "Annex VIII A.4.3",
       "maximum_differing_perfume_pct_per_mixture": "Annex VIII A.4.3; ECHA v6.0 §5.4.2 (common perfumes excluded)",
       "varying_perfumes_mapped_per_mixture": "Annex VIII B.3.1",
-      "varying_perfumes_classification_required": "Annex VIII B.3.1; B.3.8"
+      "varying_perfumes_classification_required": "Annex VIII B.3.1; B.3.8",
+      "group_wide_pH_reporting": "ECHA v6.1 Guidance §5.4.1 (interpretation of Annex VIII B.2.4)"
     },
     "eligibility_basis": "WHOLE_GROUP_NOT_PAIRWISE",
     "only_identity_varying_perfumes_count_toward_group_cap": true,
     "combined_per_member_actual_pct_is_required_even_when_dossier_omits_perfume_concentration": true,
-    "require_verified_legal_submitter": true
+    "require_verified_legal_submitter": true,
+    "per_member_pH_values_not_required_as_separate_dossier_fields_when_valid_group_range_used": true,
+    "group_pH_guidance": {
+      "source": "ECHA Annex VIII Guidance v6.1, §5.4.1, printed p.75, PDF p.76; guidance is non-binding",
+      "group_wide_range_permitted": true,
+      "extreme_condition": "below pH 3 or above pH 10",
+      "extreme_range_recommended_max_width_pH_units": "1",
+      "absence_of_explicit_per_member_pH_cannot_alone_prove_dossier_failure_if_valid_group_range_exists": true,
+      "not_a_chemical_grouping_eligibility_gate": true
+    }
   },
   "generic_component_identifiers": {
     "statutory_section": "B.3.2.3",
@@ -169,8 +179,14 @@
     "new_distributor_obligations_not_before": "2027-01-01",
     "operator_rule_note": "Use current 2026 importer/downstream-user submitter regime; do not automatically apply future Article 45(1c) obligations.",
     "versioned_changes": [
-      "2026-11-12: explicit statutory traceability, fail-safe decision statuses, exact boundary constraints, separate update/UFI triggers; retains existing field names for downstream model compatibility"
-    ]
+      "2026-11-12: explicit statutory traceability, fail-safe decision statuses, exact boundary constraints, separate update/UFI triggers; retains existing field names for downstream model compatibility",
+      "2026-11-12: direct ECHA v6.1 uploaded-PDF check; ECHA 4.2.6 corrigendum evidence, §§4.5/5.4 and examples 19–24/34; proper group-wide pH option"
+    ],
+    "direct_ECHA_guidance_v6_1_PDF_review_completed_by_agent_A": true,
+    "direct_ECHA_guidance_v6_1_PDF_sha256": "a6e9f336e8ee170a58fdc11e0575ff99ce375f2e1f0932bdda70f438b0a07e4d",
+    "direct_ECHA_guidance_v6_1_PDF_pages": 118,
+    "direct_ECHA_guidance_v6_1_evidence": "docs/regulatory-guidance-v6-1-evidence.md",
+    "guidance_v6_1_stated_change": "Corrigendum to section 4.2.6; EU importer remains responsible for placing UFI on label, non-EU supplier may pre-label with EU importer's UFI"
   },
   "concentration_declaration_policy": {
     "source": "Annex VIII B.3.4.1/Table 1, B.3.4.2/Table 2; ECHA v6.0 §5.3.3.3 Example 19 interpretation",
@@ -283,5 +299,19 @@
     "REG-UFI-CHANGE",
     "REG-UPDATE"
   ],
-  "rule_contract_status": "DRAFT_WITH_PENDING_SME_APPROVAL"
+  "rule_contract_status": "DRAFT_WITH_PENDING_SME_APPROVAL",
+  "source_check": {
+    "echa_guidance_version": "6.1",
+    "direct_uploaded_pdf_sha256": "a6e9f336e8ee170a58fdc11e0575ff99ce375f2e1f0932bdda70f438b0a07e4d",
+    "checked_guide_printed_pages": [
+      "20-21",
+      "47",
+      "58",
+      "68-70",
+      "72-76",
+      "77-80",
+      "113-115"
+    ],
+    "independent_regulatory_SME_approved": false
+  }
 }
