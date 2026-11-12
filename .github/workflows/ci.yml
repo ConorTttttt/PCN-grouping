@@ -1,0 +1,57 @@
+name: PCN deterministic QA
+
+on:
+  push:
+    branches:
+      - main
+      - "agent/**"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-quality-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONHASHSEED: "0"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test and quality tooling
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pytest hypothesis ruff mypy
+          if [ -f pyproject.toml ]; then
+            python -m pip install -e .
+          fi
+      - name: Lint
+        run: python -m ruff check .
+      - name: Type check
+        run: |
+          if [ -d src/pcn_grouping ]; then
+            python -m mypy src/pcn_grouping tests/test_acceptance_*.py
+          else
+            python -m mypy tests/test_acceptance_*.py
+          fi
+      - name: Offline unit and contract tests
+        run: python -m pytest -q
+      - name: CI verification contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("tests/fixtures")
+          cases = json.loads((root / "acceptance_cases.json").read_text())["cases"]
+          assert len(cases) >= 36, "Core QA cases missing"
+          assert (root / "echa_guidance_examples_23_24.json").exists()
+          assert (root / "concentration_boundaries.json").exists()
+          print(f"QA fixture contract present: {len(cases)} synthetic cases")
+          PY
