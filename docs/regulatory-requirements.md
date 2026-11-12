@@ -1,6 +1,6 @@
 # Regulatory requirements for EU PCN finished-mixture grouping
 
-**Audit status:** **RESEARCH-DRAFT; independent regulatory SME approval pending.** See [rule traceability matrix](rule-traceability-matrix.md) for rule IDs, legal/effective dates, PASS/FAIL/REVIEW cases and unresolved issues.
+**Audit status:** **RESEARCH-DRAFT; independent regulatory SME approval pending.** [Direct ECHA v6.1 PDF check and provenance](regulatory-guidance-v6-1-evidence.md) is now available; see [rule traceability matrix](rule-traceability-matrix.md) for rule IDs, legal/effective dates, PASS/FAIL/REVIEW cases and unresolved issues.
 
 **Research date:** 12 November 2026. **Rules baseline:** CLP Annex VIII consolidated text of 1 July 2026; ECHA Guidance v6.1 (August 2026). The detailed grouping interpretation in v6.0 (October 2025), §5.4, remains relevant: ECHA describes v6.1 as a corrigendum to §4.2.6 regarding UFI labelling by an EU importer. This is a technical requirements analysis, not a legal opinion.
 
@@ -114,8 +114,10 @@ At a minimum the downstream dossier workflow needs:
 - all trade names/variants and UFI(s), with correct per-mixture mapping;
 - verified final mixture health/physical classification, label elements, and the tox. narrative corresponding to SDS §11;
 - all legally required ingredient identities/concentrations/classifications and MiM disclosures;
-- individual physical state, colour, pH or reason absent, packaging types/sizes for consumer/professional products, EuPCS, use type and destinations/languages;
+- individual physical state, colour, **pH or reason absent (which may be reported as a valid group-wide pH range under ECHA §5.4.1)**, packaging types/sizes for consumer/professional products, EuPCS, use type and destinations/languages;
 - the group-specific mixture -> perfume -> classification mapping.
+
+**ECHA guidance §5.4.1 reporting nuance (non-statutory elaboration):** a group-wide pH range may be supplied instead of a separately stated per-mixture pH. For extreme acidic/alkaline cases (pH below 3 or above 10), the reported range should not exceed **one pH unit**. Where toxicological data differ, they must be unambiguously attributable to each member. Distinct pH or packaging by itself is not a new A.4.1 chemical-grouping prohibition.
 
 Multiple UFIs can be present in a group. Under A5.1, the varying-perfume group exception can avoid a new UFI when the **only** change is perfume/addition of perfume, but the group and legal conditions must remain satisfied. Do not auto-share a UFI without explicit governance.
 
@@ -152,7 +154,7 @@ Every hard rule should carry a source section, date/version, test fixture and a 
 
 ## I. Agent A source audit and reviewer hand-off — 12 November 2026
 
-**Status: legal verification research, not professional approval.** The complete rule-by-rule matrix, case IDs, source links and the open issue queue are in [docs/rule-traceability-matrix.md](rule-traceability-matrix.md). Reference 2020/1677 Annex VIII wording was checked against the 1 July 2026 consolidated version. ECHA v6.0 §5.4.2 and examples 23–24 were inspected, including the original table images (pp. 76–79); v6.1 is described by ECHA as a narrowly scoped §4.2.6 corrigendum, but its full PDF should still be checked by the independent reviewer before final approval.
+**Status: legal verification research, not professional approval.** The complete rule-by-rule matrix, case IDs, source links and the open issue queue are in [docs/rule-traceability-matrix.md](rule-traceability-matrix.md). Reference 2020/1677 Annex VIII wording was checked against the 1 July 2026 consolidated version. The **ECHA v6.1 August 2026 original uploaded PDF** has now been inspected directly, including §§4.5/5.4, Tables 1–2, examples 19–24, §7.4.6 and the example tables (printed pp. 69, 72–73, 77–80, 113–115). The [PDF evidence log](regulatory-guidance-v6-1-evidence.md) records its SHA-256, page crosswalk and source qualifications. ECHA's document history says v6.1 changes §4.2.6 on EU-importer UFI label responsibility. **Independent regulatory SME validation and formal v6.0–v6.1 comparative sign-off remain outstanding.**
 
 **Confirmed interpretations** (statute first; guidance separately):
 
@@ -171,3 +173,5 @@ Every hard rule should carry a source section, date/version, test fixture and a 
 | Date | Change | Approval |
 | --- | --- | --- |
 | 2026-11-12 | Agent A first independent source audit: traceability matrix and effective-date cautions; added exact boundary policy, MiM B.3.8, ECHA example 22 and §4.1 catch-all | **PENDING regulatory SME review** |
+
+| 2026-11-12 | Direct primary ECHA Guidance **v6.1** PDF verified: version change (importer UFI labelling), group submission §§4.5/5.4, examples 19–24, group pH reporting, and §7.4.6 update exceptions; see evidence log and PDF SHA-256 | **PENDING independent regulatory SME review** |
