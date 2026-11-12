@@ -251,7 +251,8 @@ def _load_solver() -> RangeSolver | None:
         if exc.name != "pcn_grouping.concentration":
             raise
         return None
-    return cast(RangeSolver, getattr(module, "find_common_declaration"))
+    method = getattr(module, "find_common_declaration", None)
+    return cast(RangeSolver, method) if callable(method) else None
 
 
 def _ranges(analysis: ComponentAnalysis, formulations: Sequence[Formulation],
