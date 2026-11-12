@@ -77,6 +77,10 @@ class EligibilityDecision(GroupDecision):
     dossier_status: RuleStatus = RuleStatus.REVIEW
     applicability_status: str = "REVIEW"  # IN_SCOPE | OUT_OF_SCOPE | REVIEW
     component_matrix: tuple[ComponentRow, ...] = ()
+    common_raw_keys: tuple[IdentityKey, ...] = ()
+    varying_raw_keys: tuple[IdentityKey, ...] = ()
+    common_notified_keys: tuple[IdentityKey, ...] = ()
+    varying_notified_keys: tuple[IdentityKey, ...] = ()
     common_ranges: tuple[CommonRange, ...] = ()
     varying_perfume_totals: tuple[PerfumeTotal, ...] = ()
     perfume_classification_matrix: tuple[
@@ -439,7 +443,8 @@ def evaluate_group(formulation_revisions: Sequence[Formulation],
          if row.raw_identity_key else "UNKNOWN",
          _signature(row.classifications))
         for row in analysis.matrix
-        if row.raw_identity_key in analysis.varying_raw_keys and row.actual.upper != 0
+        if row.raw_identity_key in analysis.varying_raw_keys
+        and row.perfume_verified and row.actual.upper != 0
     )))
     missing = tuple(sorted({
         f"{r.rule_id}:{dict(r.values).get('code', r.explanation)}"
@@ -456,6 +461,10 @@ def evaluate_group(formulation_revisions: Sequence[Formulation],
         dossier_status=dossier.status,
         applicability_status=applicability_status,
         component_matrix=analysis.matrix,
+        common_raw_keys=analysis.common_raw_keys,
+        varying_raw_keys=analysis.varying_raw_keys,
+        common_notified_keys=analysis.common_notified_keys,
+        varying_notified_keys=analysis.varying_notified_keys,
         common_ranges=common_ranges,
         varying_perfume_totals=analysis.varying_perfume_totals,
         perfume_classification_matrix=perfume_matrix,
