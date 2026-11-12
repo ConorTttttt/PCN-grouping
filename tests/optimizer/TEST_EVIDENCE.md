@@ -13,7 +13,7 @@ were run **before** the Agent B/E ABI compatibility revision.
 Development environment: Python 3.13.5, pytest 9.0.2.
 
 ```console
-$ cd /mnt/data/pcn_optimizer_dev
+$ cd <checkout>
 $ PYTHONHASHSEED=0 PYTHONPATH=src pytest -q tests/optimizer
 ........................................................................ [ 97%]
 ..                                                                       [100%]
