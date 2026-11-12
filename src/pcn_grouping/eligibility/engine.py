@@ -11,7 +11,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from decimal import Decimal
 from importlib import import_module
-from typing import Any
+from typing import Any, cast
 
 from pcn_grouping.components import (
     ComponentAnalysis, ComponentRow, ComponentRules, EvidenceCatalog,
@@ -247,7 +247,7 @@ def _load_solver() -> RangeSolver | None:
         if exc.name != "pcn_grouping.concentration":
             raise
         return None
-    return module.find_common_declaration
+    return cast(RangeSolver, getattr(module, "find_common_declaration"))
 
 
 def _ranges(analysis: ComponentAnalysis, formulations: Sequence[Formulation],
