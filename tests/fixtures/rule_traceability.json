@@ -285,5 +285,326 @@
     "R10: trace ingredient rule is pending legal interpretation",
     "ECHA examples 23-24: guidance source excerpts independently checked, but full actual BOM/percentages absent",
     "No live evaluator bridge while Agent E is pending"
-  ]
+  ],
+  "by_case_kind": {
+    "A4.2_COMPONENT_IDENTITY": {
+      "positive": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "negative": [
+        "N02"
+      ],
+      "edge": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "review": [],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "ECHA5.4_LEGAL_SUBMITTER": {
+      "positive": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "negative": [
+        "N04"
+      ],
+      "edge": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "review": [
+        "R11"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A4.1_CLASSIFICATION": {
+      "positive": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "negative": [
+        "N03"
+      ],
+      "edge": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "review": [
+        "R04"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A4.2_DECLARED_RANGE": {
+      "positive": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "negative": [],
+      "edge": [
+        "N05",
+        "N06",
+        "N07",
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "review": [],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A4.3_VARYING_PERFUMES": {
+      "positive": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "negative": [],
+      "edge": [
+        "N01",
+        "P04",
+        "P07",
+        "P08",
+        "P09",
+        "P12",
+        "R05"
+      ],
+      "review": [
+        "R06"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "B3.1_PERFUME_MATRIX": {
+      "positive": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P10",
+        "P11",
+        "P13"
+      ],
+      "negative": [],
+      "edge": [
+        "P04",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "review": [
+        "R12"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A4.1_NO_EUPCS_GATE": {
+      "positive": [
+        "P06"
+      ],
+      "negative": [],
+      "edge": [],
+      "review": [],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "B3.2.3_GCI": {
+      "positive": [
+        "P10"
+      ],
+      "negative": [],
+      "edge": [
+        "N08",
+        "N09"
+      ],
+      "review": [
+        "R01"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A4.3_PERFUME_ROLE": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [
+        "R02"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "B3.2.2_MIM": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [
+        "R03"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "B3.4.2_PERFUME_OMISSION": {
+      "positive": [
+        "P11"
+      ],
+      "negative": [],
+      "edge": [],
+      "review": [],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A4.2_TRACE_COMPONENT_THRESHOLD": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [
+        "R10"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "B3.5_ICG": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [
+        "R07"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "INPUT_BASIS": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [
+        "R08"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "INPUT_TOTAL": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [
+        "R09"
+      ],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A4.4_PER_MIXTURE_METADATA": {
+      "positive": [
+        "P13"
+      ],
+      "negative": [],
+      "edge": [],
+      "review": [],
+      "scope": [],
+      "lifecycle": [],
+      "property": []
+    },
+    "A2_APPLICABILITY": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [],
+      "scope": [
+        "S01",
+        "S02"
+      ],
+      "lifecycle": [],
+      "property": []
+    },
+    "B4.1_LIFECYCLE": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [],
+      "scope": [],
+      "lifecycle": [
+        "M01",
+        "M02"
+      ],
+      "property": []
+    },
+    "DETERMINISM": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [],
+      "scope": [],
+      "lifecycle": [],
+      "property": [
+        "M03"
+      ]
+    },
+    "RULESET_VERSION": {
+      "positive": [],
+      "negative": [],
+      "edge": [],
+      "review": [],
+      "scope": [],
+      "lifecycle": [],
+      "property": [
+        "M04"
+      ]
+    }
+  }
 }
