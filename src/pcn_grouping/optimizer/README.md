@@ -1,49 +1,79 @@
 # Deterministic portfolio optimiser (Agent G, issue #8)
 
-This module **does not decide legal grouping eligibility**. Call
-`optimise_portfolio(formulations, ruleset, evaluate_group)` (US alias
-`optimize_portfolio`) with Agent B's canonical formulations and Agent E's
-authoritative `evaluate_group(formulation_revisions, ruleset)` implementation.
-A returned group is a proposed grouping for regulatory review, never a legal
-submission or validation decision.
+The optimiser is a deterministic **proposal generator**, not a CLP
+eligibility authority, dossier checker, or PCN submission tool. It makes no
+chemical inference. Every candidate extension and every final group with two
+or more members is independently checked by the caller-injected whole-group
+evaluator. Only a final exact `ELIGIBLE` decision allows a proposal.
 
-The v1 greedy planner is **not globally optimal** and makes no claim to
-minimise total PCN submissions. Formulations are sorted by immutable
-`(id, revision)`. A candidate is appended only after a fresh **whole-group**
-evaluator ELIGIBLE decision; **every final proposed group** undergoes a
-separate full-set re-evaluation. A final FAIL or REVIEW moves all members to the
-unresolved queue. Internal metadata pre-filter uses **only** verified submitter,
-`STANDARD_FULL` notification mode and complete approved health+physical
-classification. It never prefilters on EuPCS, environmental hazards, market
-country, trade names, or product categories. Incomplete input, duplicate
-revision, unsupported submission mode and evaluator failures fail closed into
-review/singleton, never a PASS.
+## Contract aligned with Agents B and E
 
 ```python
-from pcn_grouping.optimizer import optimise_portfolio
+from pcn_grouping.eligibility import EligibilityContext, evaluate_group
+from pcn_grouping.optimizer import optimise_portfolio  # or optimize_portfolio
 
-plan = optimise_portfolio(formulations, ruleset, evaluate_group)
-# plan.groups: tuple of member-tuples verified again as complete sets
-# plan.singletons: valid prefilter records that cannot currently be grouped
-# plan.unresolved: record-level unknown/duplicate/final-review items + explanations
-# plan.trials: all attempted combinations, result and final-check marker
-# plan.globally_optimal is always False
+plan = optimise_portfolio(formulations, eligibility_context, evaluate_group)
 ```
 
-## Integration dependency
+- Inputs: a sequence of B `Formulation` records (`formulation_id`, `revision`).
+  Legacy `id` is accepted for compatible synthetic adapters, but inconsistent
+  `id` and `formulation_id` are isolated for review.
+- `EligibilityContext` must provide per-revision `ReviewedClassification`
+  attestations; the planner checks uniqueness and independently documented
+  verification before using a finished health/physical CLP signature as a
+  candidate key. Each CLP row also needs `VERIFIED` status and source IDs.
+  The comparison includes hazard class, category, H-code, route and qualifier,
+  **not** reviewer IDs, evidence sources, EuPCS, environmental hazard classes,
+  market countries or product names.
+- Legal submitter must be a non-empty authoritative ID and mode must be
+  `STANDARD_FULL`. The identifier is **not itself a verified legal-duty-holder
+  attestation**; the evaluator and regulatory review remain responsible for
+  establishing that the source ID is authentic and corresponds to the duty
+  holder. Missing/unknown regimes or evidence are isolated as unresolved.
+- Passed evaluator decisions may use E's `GroupStatus` enumeration. Reasons
+  include structured failed/review rule codes from `EligibilityDecision`.
+- `plan.groups` contains only freshly re-evaluated full groups;
+  `plan.singletons` contains records with no selected partner;
+  `plan.singleton_reasons` explains each singleton (including candidate
+  evaluations needing review);
+  `plan.unresolved` contains incomplete inputs, duplicates and failed final
+  validations; `plan.trials` records each attempted combination.
+- Every input record is in exactly one of groups, singletons or unresolved.
+  `singleton_reasons` is supplementary metadata for singletons.
+- The evaluator's independent dossier and applicability checks are not
+  replaced. An out-of-scope or research-draft result must never be promoted.
 
-Agent B must confirm `Formulation.id`, `revision`, `legal_submitter_id`,
-`notification_mode`, and `approved_health_physical_classification` names
-and classification evidence representation. Agent E must confirm the exact
-`GroupDecision.status` API. The adapter currently accepts immutable objects,
-dataclasses or mappings with the above attributes; anything unknown is
-conservatively REVIEW. Only exact returned `ELIGIBLE` unlocks a grouping.
+## Algorithm and limitations
 
-The tests under `tests/optimizer/` use synthetic evaluator **test doubles**,
-not a real regulatory engine; they verify planning invariants rather than legal
-eligibility. Once E is merged, integration must add real evaluator contract
-tests. No source formulation data or Google credentials are required.
+Version `stable_greedy_v1` sorts by immutable formulation ID/revision. It
+forms preliminary candidate blocks by legal submitter, standard-full regime
+and complete health/physical hazard signature. It walks each block in stable
+lexical order, tentatively appending a member **only if the whole new set**
+passes the injected evaluator. Each output group is then evaluated a second
+time. A post-check failing or requiring review moves the whole group to
+`unresolved`; a pairwise-compatibility graph is never accepted as proof of
+a valid three-or-more-member group.
 
-Future optimisation may enumerate all whole-group-eligible subsets, then solve
-set partitioning with a verified deterministic exact solver. Until that exists,
-`globally_optimal=False` is mandatory.
+The algorithm is intentionally **greedy and not globally optimal**:
+`plan.globally_optimal` is always `False`. It does not establish the minimum
+number of submissions. A future exact set-partition solver could enumerate
+only fully evaluator-approved subsets, use integer decision variables with
+one selected subset per formulation and minimise subset count, then
+revalidate every selected set; it would require an explicit optimality
+certificate or an honest timeout/unknown result.
+
+No percentages are computed or rounded in this module. Exact-Decimal
+concentration constraints, perfume caps, identity resolution and all legal
+rules belong to C/D/E, backed by approved, version-controlled rulesets.
+
+## Validation and release gates
+
+Existing `tests/optimizer/test_planner.py` is a legacy synthetic evaluator
+contract. The additional `test_contract.py` checks Agent B's canonical
+`formulation_id` shape, Agent E's evidence/enum shape, permutation
+invariance, whole-set counterexamples, duplicates, reasons and fail-closed
+behavior. **These are planning tests, not independent regulatory golden
+tests.** Full-stack B+D+C+E+G CI and independent regulatory and integration
+reviews are still required before any real PCN use. In particular the
+concentration solver is on a separate feature PR, and current production
+rules remain a research draft.

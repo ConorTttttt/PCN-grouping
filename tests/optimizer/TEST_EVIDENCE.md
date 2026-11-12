@@ -1,37 +1,47 @@
-# Offline test evidence for Agent G #8
+# Agent G issue #8 — reproducible optimiser test evidence
 
-Local verification carried out **2026-11-12** with **Python 3.13.5** and
-`pytest 9.0.2`. The tested three source files were checked against their
-GitHub blob SHA-1 hashes; these are **byte-for-byte identical** to the
-`agent/portfolio-optimizer` branch:
+## Previously recorded on the original draft branch
 
-| Repository file | Git blob SHA |
-| --- | --- |
-| `src/pcn_grouping/optimizer/planner.py` | `2b77b270c51ace0be68db4064bd3f640e47197a9` |
-| `src/pcn_grouping/optimizer/__init__.py` | `23329fe13ca92024c83826a0f1be2fd7dafe2a5d` |
-| `tests/optimizer/test_planner.py` | `d46d31ebb45ed92e342c2830734313536e866218` |
+The prior `agent/portfolio-optimizer` implementation was tested on
+2026-11-12 in isolation with Python 3.13.5 / pytest 9.0.2: 36 synthetic
+planner tests passed with PYTHONHASHSEED=0 and again with 123. The original
+source hashes and commands are preserved in PR #16 history. Those tests
+were run **before** the Agent B/E ABI compatibility revision.
 
-Commands run on the isolated local copy:
+## Verified locally for the ABI compatibility revision (2026-11-12)
 
-```sh
-PYTHONHASHSEED=0 python -m pytest -q tests/optimizer/test_planner.py
-# 36 passed in 0.06s
+Development environment: Python 3.13.5, pytest 9.0.2.
 
-PYTHONHASHSEED=123 python -m pytest -q tests/optimizer/test_planner.py
-# 36 passed in 0.05s
+```console
+$ cd /mnt/data/pcn_optimizer_dev
+$ PYTHONPATH=src pytest -q tests/optimizer/test_contract.py
+......................................                                   [100%]
+38 passed in 0.07s
 
-python -m compileall -q src/pcn_grouping/optimizer tests/optimizer
-# success (no errors)
+$ python -m compileall -q src/pcn_grouping/optimizer
+# success
 ```
 
-The 36 tests include 24 permutation orders, fail-closed unknown data,
-non-blocking EuPCS/environment changes, deterministic CLP ordering, duplicate
-revision isolation, a pairwise-but-not-whole-group failure, and a **second
-fresh evaluator call** before final grouping.
+The tested files are byte-identical to the GitHub uploaded blobs
+(`git hash-object` verified):
 
-**Limitations:** The tests use synthetic injected evaluator *doubles*,
-not Agent E's regulatory evaluator, which is not yet integrated. Python 3.12,
-ruff, mypy and repository-wide CI are **not yet independently verified**.
-Agent F's separate CI workflow PR #15 has currently failed before runner
-assignment (`runner_id=0`, no job steps), so no CI pass is claimed.
-Neither these results nor an optimiser grouping constitute legal approval.
+- `src/pcn_grouping/optimizer/planner.py` —
+  `d761daf9fcab9e95b8e5848decfcd4f4df0c4bb3`
+- `tests/optimizer/test_contract.py` —
+  `b49031fd2485f7d90aed5a4aa036657f00faf0f1`
+
+The new suite includes **24 input-order permutations**, checked canonical
+`formulation_id` mapping, reviewed evidence isolation, full CLP signature
+comparison (excluding unrelated evidence source IDs), verified flags,
+duplicate-revision canonical ordering, whole-set triple counterexample,
+non-blocking environmental/EuPCS/market metadata, singleton audit reasons
+and mandatory fresh post-validation. The injected oracle is explicitly
+synthetic and never determines legal eligibility.
+
+**Not yet verified:** full-stack tests against merged B+D+C+E, Python 3.12,
+Ruff/Mypy CI, and any regulatory SME sign-off. Agent E's API was read and
+consumed structurally but its unmerged implementation was not run in the
+local optimiser-only test environment. The current ruleset is a
+research draft. No production data or supplier SDS were used.
+
+**This evidence proves only planner invariants; not CLP/PCN compliance.**
