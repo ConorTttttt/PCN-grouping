@@ -25,7 +25,22 @@
     "different_components_must_be_verified_perfumes": true,
     "maximum_differing_perfume_pct_per_mixture": "5",
     "varying_perfumes_mapped_per_mixture": true,
-    "varying_perfumes_classification_required": true
+    "varying_perfumes_classification_required": true,
+    "source_sections": {
+      "same_health_physical_hazard_classification": "Annex VIII A.4.1; B.2.1",
+      "same_product_category_required": "Annex VIII A.4.1 has no identical EuPCS condition; A.3.4 and B.2.4 require classification of product use",
+      "environmental_hazard_difference_permitted": "Annex VIII A.4.1 covers health and physical only; ECHA v6.0 §5.4",
+      "one_legal_submitter_required": "CLP Article 45; Annex VIII A.2.1, B.1.2; ECHA v6.0 §5.4 interpretation (not verbatim A.4)",
+      "same_declared_components_and_ranges_required": "Annex VIII A.4.2; B.3.1-B.3.4",
+      "different_components_must_be_verified_perfumes": "Annex VIII A.4.3",
+      "maximum_differing_perfume_pct_per_mixture": "Annex VIII A.4.3; ECHA v6.0 §5.4.2 (common perfumes excluded)",
+      "varying_perfumes_mapped_per_mixture": "Annex VIII B.3.1",
+      "varying_perfumes_classification_required": "Annex VIII B.3.1; B.3.8"
+    },
+    "eligibility_basis": "WHOLE_GROUP_NOT_PAIRWISE",
+    "only_identity_varying_perfumes_count_toward_group_cap": true,
+    "combined_per_member_actual_pct_is_required_even_when_dossier_omits_perfume_concentration": true,
+    "require_verified_legal_submitter": true
   },
   "generic_component_identifiers": {
     "statutory_section": "B.3.2.3",
@@ -36,7 +51,12 @@
     "requires_exclusive_function": true,
     "prohibits_health_hazard_classification": true,
     "max_total_perfume_gci_pct": "5",
-    "max_total_colouring_agents_gci_pct": "25"
+    "max_total_colouring_agents_gci_pct": "25",
+    "source_note": "Annex VIII B.3.2.3; ECHA v6.0 §5.3.3.2.2 Example 22",
+    "health_hazard_free_required_for_GCI": true,
+    "physical_hazard_alone_does_not_prohibit_GCI": true,
+    "GCI_is_not_the_finished_mixture_grouping_exception": true,
+    "substance_role_and_classification_evidence_required": true
   },
   "major_concern_component_hazard_categories": [
     "Acute Tox. 1",
@@ -106,7 +126,9 @@
   "disclosure_thresholds_pct": {
     "health_or_physical_hazardous_standard": "0.1",
     "identified_hazardous_below_point_one": "include_unless_documented_irrelevant",
-    "identified_not_health_or_physical_hazardous": "1"
+    "identified_not_health_or_physical_hazardous": "1",
+    "source": "Annex VIII B.3.3",
+    "original_BOM_must_be_preserved": true
   },
   "perfume_concentration_omission_in_group": {
     "statutory_section": "B.3.4.2",
@@ -116,7 +138,9 @@
       "Skin Sens. 1B",
       "Asp. Tox."
     ],
-    "actual_concentration_still_required_for_group_threshold": true
+    "actual_concentration_still_required_for_group_threshold": true,
+    "source_note": "Annex VIII B.3.4.2 last paragraph; ECHA v6.0 §5.4.2 pp.75-77",
+    "internal_actual_concentration_is_not_optional": true
   },
   "unsupported_in_phase_1": [
     "new ICG approvals",
@@ -125,5 +149,139 @@
     "fuel derogations",
     "mixture classification calculation",
     "submission portal integration"
-  ]
+  ],
+  "schema_version": "0.2-regulatory-audit",
+  "regulatory_audit": {
+    "checked_on": "2026-11-12",
+    "checked_against": [
+      "CLP consolidated 2026-07-01, Annex VIII (Parts A/B/C)",
+      "Commission Delegated Regulation (EU) 2020/1677 (Annex VIII replacement)",
+      "ECHA Annex VIII guidance v6.0 October 2025 §5.4.2, examples 19,22,23,24",
+      "ECHA Annex VIII guidance v6.1 August 2026 (release note: §4.2.6 UFI labelling corrigendum)",
+      "Regulation 2024/2865 as amended by Regulation 2025/2439: delayed distributor changes"
+    ],
+    "legal_basis_url": "https://eur-lex.europa.eu/eli/reg/2008/1272/2026-07-01/eng",
+    "legal_status": "RESEARCH_ONLY; INDEPENDENT_REGULATORY_SME_SIGNOFF_REQUIRED",
+    "statutory_rules_effective_baseline": "2026-07-01",
+    "guidance_is_binding_law": false,
+    "independent_guidance_full_pdf_review_pending": true,
+    "rule_traceability_matrix": "docs/rule-traceability-matrix.md",
+    "new_distributor_obligations_not_before": "2027-01-01",
+    "operator_rule_note": "Use current 2026 importer/downstream-user submitter regime; do not automatically apply future Article 45(1c) obligations.",
+    "versioned_changes": [
+      "2026-11-12: explicit statutory traceability, fail-safe decision statuses, exact boundary constraints, separate update/UFI triggers; retains existing field names for downstream model compatibility"
+    ]
+  },
+  "concentration_declaration_policy": {
+    "source": "Annex VIII B.3.4.1/Table 1, B.3.4.2/Table 2; ECHA v6.0 §5.3.3.3 Example 19 interpretation",
+    "base_units": "percentage_points",
+    "actual_values": [
+      "decimal_strings_only",
+      "exact_zero_is_not_unknown",
+      "missing_value_means_REVIEW",
+      "no_implicit_rounding"
+    ],
+    "allow_exact_declaration": true,
+    "common_range_validation": "a single declared closed interval must cover every actual member value/interval and meet the narrowest statutory width for every intersecting zone",
+    "boundary_zone_definitions": [
+      "(0,0.1)",
+      "[0.1,1)",
+      "[1,10)",
+      "[10,25)",
+      "[25,100)"
+    ],
+    "zero_pcnt_policy": "ABSENCE_NOT_A_POSITIVE_DECLARED_CONCENTRATION",
+    "exactly_100_pcnt_policy": "REVIEW_SPECIAL_CASE_NOT_COVERED_BY_PRINTED_WIDTH_BAND",
+    "mixed_mass_and_volume_policy": "REVIEW_UNTIL_VERIFIED_CONVERSION",
+    "range_endpoint_policy": "Use exact Decimal comparisons; cross-band ranges obey width in every intersected zone"
+  },
+  "MiM_identification": {
+    "source": "Annex VIII B.3.2.2(a),(b),(c); B.3.8",
+    "fully_known": "identify underlying constituents where required",
+    "UFI_and_prior_recipient_submitted": "product identifier, MiM concentration and valid UFI required",
+    "UFI_but_no_prior_recipient_submission": "product identifier, concentration, UFI, SDS composition, other known components and supplier contact details",
+    "no_UFI": "product identifier, concentration, SDS composition, other known components and supplier contact details",
+    "unknown_recipient_or_supplier_evidence": "REVIEW",
+    "no_fuzzy_supplier_MiM_equivalence": true
+  },
+  "ICG_policy": {
+    "source": "Annex VIII B.3.5; B.3.5.1-B.3.5.2",
+    "status": "VALIDATED_EXISTING_ICG_ONLY",
+    "new_ICG_without_evidence": "REVIEW",
+    "general_path": "same technical function, identical health/physical classification, same toxicological effect/target organ, all final combinations same B.2 information",
+    "alternate_path": "only specified skin/eye/aspiration/respiratory-or-skin-sensitisation hazards; same health/physical classification; where applicable pH same acidic/neutral/alkaline class; at most five components; all final combinations same B.2 information",
+    "do_not_conflate_with_finished_mixture_grouping": true
+  },
+  "submission_update_policy": {
+    "source": "Annex VIII Part B 4.1/Table 4; Annex VIII A.5.1; A.3.5",
+    "separate_from_initial_chemical_eligibility": true,
+    "triggers": [
+      "changed mixture product identifier or UFI",
+      "changed finished mixture health/physical CLP classification",
+      "relevant new SDS Section 11 toxicology",
+      "added/substituted/deleted B.3.3 component",
+      "component exits previously declared range",
+      "component previously declared exactly changes beyond Table 4 relative tolerance",
+      "other change relevant to emergency health response"
+    ],
+    "relative_tolerances_for_prior_exact_declaration_only": [
+      {
+        "min_exclusive": "25",
+        "max_inclusive": "100",
+        "change_exceeding_relative_pct": "5"
+      },
+      {
+        "min_exclusive": "10",
+        "max_inclusive": "25",
+        "change_exceeding_relative_pct": "10"
+      },
+      {
+        "min_exclusive": "2.5",
+        "max_inclusive": "10",
+        "change_exceeding_relative_pct": "20"
+      },
+      {
+        "min_inclusive": "0",
+        "max_inclusive": "2.5",
+        "change_exceeding_relative_pct": "30"
+      }
+    ],
+    "group_perfume_change_requires_mapping_update": true,
+    "perfume_only_group_change_may_avoid_new_UFI_subject_to_A_5_1": true
+  },
+  "decision_policy": {
+    "statuses": [
+      "PASS",
+      "FAIL",
+      "REVIEW"
+    ],
+    "failed_statutory_rule_overrides_review": true,
+    "unknown_evidence_means_REVIEW": true,
+    "applicant_applicability_separate_out_of_scope": true,
+    "chemical_eligibility_distinct_from_dossier_ready": true,
+    "human_regulatory_review_required": true
+  },
+  "rule_ids": [
+    "REG-SCOPE",
+    "REG-SUBMITTER",
+    "REG-MODE",
+    "REG-CLASS",
+    "REG-COMPONENTS",
+    "REG-COMMON-RANGE",
+    "REG-PERFUME-IDENTITY",
+    "REG-PERFUME-CAP",
+    "REG-PERFUME-MAP",
+    "REG-DOSSIER",
+    "REG-DECLARABLE",
+    "REG-SUBSTANCE-ID",
+    "REG-MIM",
+    "REG-GCI",
+    "REG-MAJOR-BAND",
+    "REG-OTHER-BAND",
+    "REG-PERFUME-OMISSION",
+    "REG-ICG",
+    "REG-UFI-CHANGE",
+    "REG-UPDATE"
+  ],
+  "rule_contract_status": "DRAFT_WITH_PENDING_SME_APPROVAL"
 }
