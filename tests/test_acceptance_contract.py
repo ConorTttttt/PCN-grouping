@@ -87,7 +87,7 @@ def test_synthetic_record_contract(case: dict[str, Any]) -> None:
             total += lower
             assert not (component["verified_perfume"] and component["perfume_role_evidence"] is None and case["expected_status"] == "ELIGIBLE")
         if all_exact:
-            if case["id"] == "R09":
+            if case["id"] == "R09" and formula["id"] == "A":
                 assert total == Decimal("99")
             else:
                 assert total == Decimal("100"), f"{case['id']}:{formula['id']} sums to {total}"
