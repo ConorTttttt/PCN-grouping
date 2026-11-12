@@ -16,7 +16,10 @@ Development environment: Python 3.13.5, pytest 9.0.2.
 $ cd /mnt/data/pcn_optimizer_dev
 $ PYTHONPATH=src pytest -q tests/optimizer/test_contract.py
 ......................................                                   [100%]
-38 passed in 0.07s
+74 passed in 0.14s
+
+$ PYTHONHASHSEED=123 PYTHONPATH=src pytest -q tests/optimizer
+# 74 passed in 0.09s
 
 $ python -m compileall -q src/pcn_grouping/optimizer
 # success
@@ -29,8 +32,10 @@ The tested files are byte-identical to the GitHub uploaded blobs
   `e27eb563ebd0d1ddbc6e78c88c646aea5af62d56`
 - `tests/optimizer/test_contract.py` —
   `b49031fd2485f7d90aed5a4aa036657f00faf0f1`
+- `tests/optimizer/test_planner.py` (original legacy suite) —
+  `d46d31ebb45ed92e342c2830734313536e866218`
 
-The new suite includes **24 input-order permutations**, checked canonical
+Both locally re-run suites, totaling 74 tests, pass at two hash seeds. The new suite includes **24 input-order permutations**, checked canonical
 `formulation_id` mapping, reviewed evidence isolation, full CLP signature
 comparison (excluding unrelated evidence source IDs), verified flags,
 duplicate-revision canonical ordering, whole-set triple counterexample,
