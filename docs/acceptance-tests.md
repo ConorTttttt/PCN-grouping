@@ -31,7 +31,7 @@ For compactness, `B` means a non-classified base component; `P-X` etc are separa
 | P11 | Perfume is only Skin Sens. 1, submitted concentration lawfully omitted but actual value 3% known internally | ELIGIBLE if other conditions pass | Disclosure exemption does not waive 5% calculation |
 | R06 | Same perfume-only-Skin Sens. ingredient, concentration omitted both from dossier and internal input | REVIEW_REQUIRED | 5% cannot be established |
 | P12 | A:B=96,P-X=4; B:B=96,P-Y=4; C:B=92,P-X=4,P-Y=4 — pairwise tests pass | A-B-C whole group INELIGIBLE | In C both varying perfume IDs total 8%; do not use union-find |
-| N08 | A:B=99,P-X=1; B:B=99,P-X=1 but non-perfume trace ingredient exists in only one formulation and no valid abstraction | INELIGIBLE conservatively | Full BOM differences not silently ignored |
+| R10 | A:B=99,P-X=1; B:B=98.99,P-X=1, plus 0.01% non-hazardous trace ingredient only in B | REVIEW_REQUIRED until regulatory treatment is confirmed | An undeclared trace difference must not be silently ignored or asserted a definitive legal fail without checking the applicable identification threshold |
 | R07 | Interchangeable component group claimed without technical/tox/final-mixture evidence | REVIEW_REQUIRED | B3.5 separate eligibility criteria |
 | R08 | % basis differs (mass vs volume) without density/source data | REVIEW_REQUIRED | Incomparable percentages |
 | R09 | Formulation components do not total 100% within approved tolerance | REVIEW_REQUIRED | Invalid data, not a legal grouping fail |
