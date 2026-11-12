@@ -27,6 +27,12 @@
 | Example 24, pp. 79–80; PDF 80–81 | REG-PERFUME-IDENTITY, REG-PERFUME-CAP, REG-PERFUME-MAP, REG-MIM | ABC contains “perfume mixture a” (UFI-backed) and “perfume mixture b” (SDS-based without UFI), BCD contains perfume GCI, CDE contains “perfume mixture b” and GCI. MiM b is not group-common because it is absent from BCD. Actual concentration of MiM a in ABC is **not disclosed** (“Not needed” for the filed concentration), so a complete numerical internal cap check requires independently verified actual values. For CDE, b is stated 0.5–0.9 and GCI 0.1–1.1 (reported intervals); do **not** invent exact actuals for either. |
 | §7.4.6 / Example 34, pp. 113–115; PDF 114–116 | REG-UPDATE, REG-UFI-CHANGE | Perfume changes under a valid group generally need updated member–perfume mapping but **need not** cause a new UFI; adding a perfume already represented by an existing GCI can sometimes require **no update** when the identifier's reported concentration range remains valid. Crossing the varying perfume 5% limit prevents continued coverage of that mixture within the group and requires a separate notification. Distinguish update, UFI change and group eligibility. |
 
+## ECHA §7.4.3 anticipated 2027 update rule — authoritative source correction
+
+**Important effectivity conflict found from the later uploaded legislation (12 November 2026):** This v6.1 (August 2026) guidance, at **printed p.109 / PDF p.110**, refers to “indent 5 Section 4.1 Part B” and treats updates for other emergency-response-relevant changes as mandatory. However, the **2026-07-01 consolidated CLP Annex VIII, Part B §4.1** in both uploaded primary-law PDF excerpts has **four**, not five, top-level update indents. The fifth indent is added by **Regulation (EU) 2024/2865 Annex IV** and becomes applicable only **2027-01-01** under Article 2(3) as amended by Regulation (EU) **2025/2439**. Accordingly the 2026 deterministic rulebook **must not** turn a purely fifth-indent-only 2026 case into an automatic statutory FAIL. Maintain separate information-accuracy/other-duty review where appropriate, and activate a separately versioned 2027 rule only after SME confirmation. See [primary-law PDF source audit](regulatory-annex-viii-2026-source-audit.md).
+
+This distinction does **not** affect §5.4 grouping equality or the 5% differing-perfume limit, nor does it remove the 2026 **express obligation to update the group member–perfume list when perfumes change** (existing B.4.1). The original Agent A audit described the catch-all as already current; **that attribution is superseded**.
+
 ## Required corrections to the existing audit
 
 1. The prior audit matrix's example page numbers were off by one relative to **printed page** numbering; the source-backed printed and PDF pages are now documented above. (Example 19 is printed **69**, example 23 printed **77–78**, and example 24 printed **79–80**.)
@@ -41,3 +47,5 @@
 - Do not commit proprietary formulation/SDS data or this externally sourced PDF as a repository attachment without explicit licensing review.
 
 **Status:** The relevant v6.1 PDF pages were directly read and rendered for inspection. The binding legal baseline remains the CLP Annex VIII text, not this guidance; no compliance certification or official ECHA dossier validation has been performed.
+
+**2026-11-12 source addendum:** Two uploaded 2026-07-01 statutory extracts were directly reviewed and corrected the effective-date attribution of the v6.1 §7.4.3 fifth-indent example. The direct ECHA PDF provenance above is unchanged; legal effective-date verification now controls the research ruleset. Independent SME sign-off remains pending.
