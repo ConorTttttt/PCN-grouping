@@ -13,13 +13,25 @@ from pathlib import Path
 from pcn_grouping.components import ComponentRules, EvidenceCatalog, IdentityRecord, LineEvidence
 from pcn_grouping.concentration import find_common_declaration
 from pcn_grouping.eligibility import (
-    ApplicabilityEvidence, EligibilityContext, EligibilityDecision, ReviewedClassification,
+    ApplicabilityEvidence,
+    EligibilityContext,
+    EligibilityDecision,
+    ReviewedClassification,
     evaluate_group,
 )
 from pcn_grouping.models import (
-    CLPClassification, Component, ComponentKind, ConcentrationValue, Evidence,
-    EvidenceStatus, Formulation, GroupStatus, NotificationMode, PercentageBasis,
-    RawBOMLine, RuleStatus,
+    CLPClassification,
+    Component,
+    ComponentKind,
+    ConcentrationValue,
+    Evidence,
+    EvidenceStatus,
+    Formulation,
+    GroupStatus,
+    NotificationMode,
+    PercentageBasis,
+    RawBOMLine,
+    RuleStatus,
 )
 
 RULE_FILE = (
